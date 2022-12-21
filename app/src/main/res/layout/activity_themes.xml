@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/colorBackgroundSecondary">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginTop="24dp"
+        android:background="?attr/colorBackgroundPrimary"
+        android:contentInsetStart="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgThemesBack"
+                android:layout_width="@dimen/avatarSize"
+                android:layout_height="@dimen/avatarSize"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:padding="16dp"
+                android:src="@drawable/ic_is_control_back"
+                android:tint="?attr/iconTint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="@string/settings_themes_preview"
+                android:textColor="?attr/iconTint"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:background="?attr/colorBackgroundPrimary"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtMainNavLeftTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/template_btc_day"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:textColor="?attr/textColorPrimary"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/txtMainNavLeftSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/template_btc_day_title"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtMainNavRightTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/template_rub_day"
+                        android:includeFontPadding="false"
+                        android:textColor="?attr/textColorPrimary"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/txtMainNavRightSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/template_rub_day_title"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="?attr/colorBackgroundSecondary"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <FrameLayout
+                        android:layout_width="36dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="?attr/chartSelectionBackgroundResource"  >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_hint"
+                            android:textSize="12sp"
+                            android:text="@string/chart_one_hour"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <FrameLayout
+                        android:layout_width="36dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="?attr/chartSelectionBackgroundResource" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_hint"
+                            android:textSize="12sp"
+                            android:text="@string/chart_six_hours"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <FrameLayout
+                        android:layout_width="36dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="?attr/chartSelectionBackgroundResource" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_hint"
+                            android:textSize="12sp"
+                            android:text="@string/chart_twelve_hours"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <FrameLayout
+                        android:id="@+id/flThemesOneDay"
+                        android:layout_width="36dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="?attr/chartSelectionBackgroundResource" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/colorBackgroundPrimary"
+                            android:textSize="12sp"
+                            android:text="@string/chart_one_day"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <FrameLayout
+                        android:layout_width="36dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="?attr/chartSelectionBackgroundResource" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_hint"
+                            android:textSize="12sp"
+                            android:text="@string/chart_three_days"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <FrameLayout
+                        android:layout_width="36dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="?attr/chartSelectionBackgroundResource" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_hint"
+                            android:textSize="12sp"
+                            android:text="@string/chart_all"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chartThemes"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="?attr/colorBackgroundSecondary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tabBarLayoutSize"
+                android:background="?attr/colorBackgroundSecondary" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="?attr/tabShape" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/textColorPrimary"
+                        android:gravity="center"
+                        android:text="@string/tab_income"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:includeFontPadding="false"
+                        android:textSize="12sp"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/textColorSecondary"
+                        android:gravity="center"
+                        android:text="@string/tab_balance"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:includeFontPadding="false"
+                        android:textSize="12sp"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/textColorSecondary"
+                        android:gravity="center"
+                        android:text="@string/tab_balance"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:includeFontPadding="false"
+                        android:textSize="12sp"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/textColorSecondary"
+                        android:gravity="center"
+                        android:text="@string/tab_workers"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:includeFontPadding="false"
+                        android:textSize="12sp"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/income_hour"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="?attr/colorPrimary"
+                        android:includeFontPadding="false" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:includeFontPadding="false"
+                            android:text="@string/template_rub_hour"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="?attr/textColorPrimary" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/currency_rub"
+                            android:layout_marginStart="4dp"
+                            android:includeFontPadding="false"
+                            android:textColor="?attr/textColorPrimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_hint"
+                            android:includeFontPadding="false"
+                            android:text="@string/template_btc_hour"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/currency_btc"
+                            android:layout_marginStart="4dp"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/text_color_hint"
+                            android:textSize="8sp"
+                            tools:ignore="SmallSp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/income_day"
+                        android:textSize="12sp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="?attr/colorPrimary"
+                        android:includeFontPadding="false" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:includeFontPadding="false"
+                            android:text="@string/template_rub_day"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="?attr/textColorPrimary" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/currency_rub"
+                            android:layout_marginStart="4dp"
+                            android:includeFontPadding="false"
+                            android:textColor="?attr/textColorPrimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_hint"
+                            android:text="@string/template_btc_day"
+                            android:includeFontPadding="false"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="@string/currency_btc"
+                            android:layout_marginStart="4dp"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/text_color_hint"
+                            android:textSize="8sp"
+                            tools:ignore="SmallSp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="126dp">
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="?attr/colorBackgroundSecondary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="40dp" >
+
+                    <FrameLayout
+                        android:id="@+id/flLightTab"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/light_theme_picker_title"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_themes_light"
+                            android:layout_gravity="center"
+                            android:textAllCaps="true"
+                            android:includeFontPadding="false"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/light_text_color_primary" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flDarkTab"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dark_theme_picker_title"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_themes_dark"
+                            android:textAllCaps="true"
+                            android:layout_gravity="center"
+                            android:includeFontPadding="false"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/dark_text_color_primary" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/viewThemesInverse"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="46dp"
+                    android:background="?attr/colorPickerTitleInverse" />
+
+                <LinearLayout
+                    android:id="@+id/llThemesPalette"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="46dp"
+                    android:background="?attr/colorPickerTitle" >
+
+                    <FrameLayout
+                        android:id="@+id/flThemesBluePalette"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <FrameLayout
+                            android:layout_width="@dimen/settingThemePicker"
+                            android:layout_height="@dimen/settingThemePicker"
+                            android:layout_gravity="center"
+                            android:background="?attr/colorPickerBlue" >
+
+                            <View
+                                android:id="@+id/viewThemesBlue"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:background="?attr/themePaletteSelected"
+                                android:visibility="gone" />
+
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flThemesGreenPalette"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <FrameLayout
+                            android:layout_width="@dimen/settingThemePicker"
+                            android:layout_height="@dimen/settingThemePicker"
+                            android:layout_gravity="center"
+                            android:background="?attr/colorPickerGreen" >
+
+                            <View
+                                android:id="@+id/viewThemesGreen"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:background="?attr/themePaletteSelected"
+                                android:visibility="gone" />
+
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flThemesOrangePalette"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <FrameLayout
+                            android:layout_width="@dimen/settingThemePicker"
+                            android:layout_height="@dimen/settingThemePicker"
+                            android:layout_gravity="center"
+                            android:background="?attr/colorPickerOrange">
+
+                            <View
+                                android:id="@+id/viewThemesOrange"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:background="?attr/themePaletteSelected"
+                                android:visibility="gone" />
+
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flThemesRedPalette"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <FrameLayout
+                            android:layout_width="@dimen/settingThemePicker"
+                            android:layout_height="@dimen/settingThemePicker"
+                            android:layout_gravity="center"
+                            android:background="?attr/colorPickerRed" >
+
+                            <View
+                                android:id="@+id/viewThemesRed"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:background="?attr/themePaletteSelected"
+                                android:visibility="gone" />
+
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flThemesPurplePalette"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <FrameLayout
+                            android:layout_width="@dimen/settingThemePicker"
+                            android:layout_height="@dimen/settingThemePicker"
+                            android:layout_gravity="center"
+                            android:background="?attr/colorPickerPurple" >
+
+                            <View
+                                android:id="@+id/viewThemesPurple"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:background="?attr/themePaletteSelected"
+                                android:visibility="gone" />
+
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+</FrameLayout>

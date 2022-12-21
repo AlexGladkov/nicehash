@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "374961373847",
+    "firebase_url": "https://nicehashmonitor-1dfdc.firebaseio.com",
+    "project_id": "nicehashmonitor-1dfdc",
+    "storage_bucket": "nicehashmonitor-1dfdc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374961373847:android:64f3853f13bc646b",
+        "android_client_info": {
+          "package_name": "com.dev.nicehash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374961373847-q9oojjai2ta0rf3ttkb19u9qbdnvhut0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.nicehash",
+            "certificate_hash": "83c74c129d61be2fee2ca8fea076330dc3551cc3"
+          }
+        },
+        {
+          "client_id": "374961373847-956ijq8o1n92880pvp8e7uumpphtt3hg.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "374961373847-956ijq8o1n92880pvp8e7uumpphtt3hg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADSnIpww2LiZLn4_S7vMX9rBj2ipDQldo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374961373847-956ijq8o1n92880pvp8e7uumpphtt3hg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

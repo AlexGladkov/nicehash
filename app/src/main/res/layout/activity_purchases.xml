@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackgroundSecondary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbPurchases"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginTop="24dp"
+        android:background="?attr/colorBackgroundPrimary"
+        android:contentInsetStart="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgPurchasesBack"
+                android:layout_width="@dimen/avatarSize"
+                android:layout_height="@dimen/avatarSize"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:padding="16dp"
+                android:src="@drawable/ic_is_control_back"
+                android:tint="?attr/iconTint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="@string/settings_purchases"
+                android:textColor="?attr/iconTint"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/purhases_features"
+                android:textColor="?attr/textColorSecondary"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginTop="8dp"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:id="@+id/btnPurchaseThemes"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notificationsMenuSize"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/purchases_themes"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="?attr/textColorThird"
+                    android:textSize="16sp"
+                    android:text="@string/cost_2"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="-0.5dp"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:id="@+id/btnPurchaseAddMiner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notificationsMenuSize"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/purchases_miner"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="?attr/textColorThird"
+                    android:textSize="16sp"
+                    android:text="@string/cost_2"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="-0.5dp"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:id="@+id/btnPurchaseRemoveAds"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notificationsMenuSize"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/purchases_remove_ads"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="?attr/textColorThird"
+                    android:textSize="16sp"
+                    android:text="@string/cost_2"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginTop="-0.5dp"
+                android:background="?attr/dividerColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginTop="24dp"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:id="@+id/btnPurchaseSilver"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notificationsMenuSize"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:fontFamily="sans-serif"
+                        android:includeFontPadding="false"
+                        android:text="@string/purchases_silver_title"
+                        android:textColor="?attr/textColorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="32dp"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginTop="4dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/purchases_silver_subtitle"
+                        android:textColor="?attr/textColorSecondary"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="?attr/textColorThird"
+                    android:textSize="16sp"
+                    android:text="@string/cost_5"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="-0.5dp"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:id="@+id/btnPurchaseGold"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notificationsMenuSize"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:fontFamily="sans-serif"
+                        android:includeFontPadding="false"
+                        android:text="@string/purchases_gold_title"
+                        android:textColor="?attr/textColorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="32dp"
+                        android:fontFamily="sans-serif"
+                        android:layout_marginTop="4dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/purchases_gold_subtitle"
+                        android:textColor="?attr/textColorSecondary"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="?attr/textColorThird"
+                    android:textSize="16sp"
+                    android:text="@string/cost_7"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginTop="-0.5dp"
+                android:background="?attr/dividerColor" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

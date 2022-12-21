@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerWorkers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        android:id="@+id/cpvWorkers"
+        android:layout_width="@dimen/loaderSize"
+        android:layout_height="@dimen/loaderSize"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:cpv_color="?attr/colorPrimary"
+        app:cpv_animAutostart="true"
+        app:cpv_indeterminate="true" />
+
+    <TextView
+        android:id="@+id/txtWorkersNoItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/workers_no_items"
+        android:textColor="?attr/textColorThird" />
+
+</FrameLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flChoose"
+    android:background="#80000000">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tbChoose"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_marginTop="24dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetStart="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgChooseAdd"
+                    android:layout_width="@dimen/avatarSize"
+                    android:layout_height="@dimen/avatarSize"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_control_add"
+                    android:padding="16dp" />
+
+                <TextView
+                    android:id="@+id/txtChooseTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:textColor="?attr/textColorPrimary"
+                    android:text="@string/title_choose"
+                    android:gravity="center_vertical"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/btnChooseSettings"
+                    android:layout_width="@dimen/defaultButtonSize"
+                    android:layout_height="@dimen/defaultButtonSize"
+                    android:src="@drawable/ic_control_gear"
+                    android:layout_gravity="center_vertical"
+                    android:padding="16dp" />
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerMiners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+
+    </LinearLayout>
+
+</FrameLayout>

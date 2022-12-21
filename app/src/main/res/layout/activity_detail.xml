@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/colorBackgroundSecondary" >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorBackgroundPrimary"
+        app:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        android:layout_marginTop="24dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btnDetailBack"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="16dp"
+                android:src="@drawable/ic_is_control_back"
+                android:tint="?attr/iconTint"/>
+
+            <TextView
+                android:id="@+id/txtDetailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:textColor="?attr/textColorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnDetailAction"
+                android:layout_width="@dimen/defaultButtonSize"
+                android:layout_height="@dimen/defaultButtonSize"
+                android:layout_gravity="center_vertical"
+                android:padding="16dp"
+                android:src="@drawable/ic_control_refresh"
+                android:tint="?attr/iconTint" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorBackgroundPrimary"
+        android:layout_marginTop="80dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorBackgroundPrimary"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtDetailNavLeftTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:text="0.0045"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:textColor="?attr/textColorPrimary"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/txtDetailNavLeftSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Payrate, BTC/GH/Day"
+                        android:includeFontPadding="false"
+                        android:textColor="?attr/textColorSecondary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtDetailNavRightTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="94.83"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="16dp"
+                        android:includeFontPadding="false"
+                        android:textColor="?attr/textColorPrimary"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/txtDetailNavRightSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="Average speed, MH/s"
+                        android:layout_gravity="end"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="?attr/colorBackgroundSecondary"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <FrameLayout
+                        android:id="@+id/flDetailOneHour"
+                        android:layout_width="36dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="?attr/chartSelectionBackgroundResource"  >
+
+                        <TextView
+                            android:id="@+id/txtDetailOneHour"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_hint"
+                            android:textSize="12sp"
+                            android:text="@string/chart_one_hour"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <FrameLayout
+                        android:id="@+id/flDetailSixHours"
+                        android:layout_width="36dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="?attr/chartSelectionBackgroundResource" >
+
+                        <TextView
+                            android:id="@+id/txtDetailSixHours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_hint"
+                            android:textSize="12sp"
+                            android:text="@string/chart_six_hours"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <FrameLayout
+                        android:id="@+id/flDetailTwelveHours"
+                        android:layout_width="36dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="?attr/chartSelectionBackgroundResource" >
+
+                        <TextView
+                            android:id="@+id/txtDetailTwelveHours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_hint"
+                            android:textSize="12sp"
+                            android:text="@string/chart_twelve_hours"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <FrameLayout
+                        android:id="@+id/flDetailOneDay"
+                        android:layout_width="36dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="?attr/chartSelectionBackgroundResource" >
+
+                        <TextView
+                            android:id="@+id/txtDetailOneDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_hint"
+                            android:textSize="12sp"
+                            android:text="@string/chart_one_day"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <FrameLayout
+                        android:id="@+id/flDetailThreeDays"
+                        android:layout_width="36dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="?attr/chartSelectionBackgroundResource" >
+
+                        <TextView
+                            android:id="@+id/txtDetailThreeDays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_hint"
+                            android:textSize="12sp"
+                            android:text="@string/chart_three_days"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <FrameLayout
+                        android:id="@+id/flDetailAll"
+                        android:layout_width="36dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:background="?attr/chartSelectionBackgroundResource" >
+
+                        <TextView
+                            android:id="@+id/txtDetailAll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_hint"
+                            android:textSize="12sp"
+                            android:text="@string/chart_all"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chartDetail"
+                android:layout_width="match_parent"
+                android:layout_height="308dp"
+                android:background="?attr/colorBackgroundSecondary" />
+            
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

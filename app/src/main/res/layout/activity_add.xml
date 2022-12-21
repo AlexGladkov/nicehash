@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackgroundSecondary" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbChoose"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="?attr/colorBackgroundPrimary"
+        android:layout_marginTop="24dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgAddBack"
+                android:layout_width="@dimen/avatarSize"
+                android:layout_height="@dimen/avatarSize"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_is_control_back"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/txtAddTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif"
+                android:includeFontPadding="false"
+                android:text="@string/add_miner_title"
+                android:textColor="?attr/textColorPrimary"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnAddApply"
+                android:layout_width="@dimen/defaultButtonSize"
+                android:layout_height="@dimen/defaultButtonSize"
+                android:src="@drawable/ic_control_save"
+                android:layout_gravity="center_vertical"
+                android:padding="16dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_hint"
+            android:textAllCaps="true"
+            android:text="@string/add_name"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_separator_size"
+            android:layout_marginTop="8dp"
+            android:alpha="0.2"
+            android:background="?attr/dividerColor" />
+        
+        <EditText
+            android:id="@+id/txtAddName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:singleLine="true"
+            android:textColor="?attr/textColorPrimary"
+            android:inputType="textCapSentences"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="?attr/colorBackgroundPrimary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_separator_size"
+            android:alpha="0.2"
+            android:background="?attr/dividerColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="12sp"
+            android:textColor="@color/text_color_hint"
+            android:textAllCaps="true"
+            android:text="@string/add_btc_address"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_separator_size"
+            android:layout_marginTop="8dp"
+            android:alpha="0.2"
+            android:background="?attr/dividerColor" />
+
+        <EditText
+            android:id="@+id/txtAddHash"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:singleLine="true"
+            android:textColor="?attr/textColorPrimary"
+            android:inputType="textCapSentences"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="?attr/colorBackgroundPrimary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_separator_size"
+            android:alpha="0.2"
+            android:background="?attr/dividerColor" />
+
+    </LinearLayout>
+
+</FrameLayout>

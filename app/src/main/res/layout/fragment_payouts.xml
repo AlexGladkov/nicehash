@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerPayouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        android:id="@+id/cpvPayouts"
+        android:layout_width="@dimen/loaderSize"
+        android:layout_height="@dimen/loaderSize"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:cpv_color="?attr/colorPrimary"
+        app:cpv_indeterminate="true"
+        app:cpv_animAutostart="true" />
+
+    <TextView
+        android:id="@+id/txtPayoutsNoItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="?attr/textColorThird"
+        android:text="@string/payout_no_items"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp" />
+
+</FrameLayout>

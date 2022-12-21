@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Android / Icons / disclosure</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.699999988" stroke-linecap="round">
+        <g id="Android-/-Table-/-Header-/-Algo-T1" transform="translate(-342.000000, -11.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="Header">
+                <g id="bar">
+                    <g id="Android-/-Icons-/-disclosure" transform="translate(332.000000, 4.000000)">
+                        <polyline id="Disclosure" transform="translate(12.500000, 12.000000) rotate(-90.000000) translate(-12.500000, -12.000000) " points="16.5 10.5 12.5 13.5 8.5 10.5"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

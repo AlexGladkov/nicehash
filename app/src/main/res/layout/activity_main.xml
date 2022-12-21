@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackgroundSecondary"
+    tools:context="com.dev.nicehash.app.activities.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbMain"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginTop="24dp"
+        android:background="?attr/colorBackgroundPrimary"
+        android:contentInsetStart="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgMainDevice"
+                android:layout_width="@dimen/avatarSize"
+                android:layout_height="@dimen/avatarSize"
+                android:layout_gravity="center_vertical"
+                android:padding="16dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_icons_nvidia"
+                android:tint="?attr/iconTint" />
+
+            <TextView
+                android:id="@+id/txtMainTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="Nvidia"
+                android:textColor="?attr/textColorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnAction"
+                android:layout_width="@dimen/defaultButtonSize"
+                android:layout_height="@dimen/defaultButtonSize"
+                android:layout_gravity="center_vertical"
+                android:padding="16dp"
+                android:src="@drawable/ic_control_refresh"
+                android:tint="?attr/iconTint" />
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsvMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llMainContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="72dp"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="?attr/colorBackgroundSecondary"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <FrameLayout
+                            android:id="@+id/flMainOneHour"
+                            android:layout_width="36dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:background="?attr/chartSelectionBackgroundResource"  >
+
+                            <TextView
+                                android:id="@+id/txtMainOneHour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_hint"
+                                android:textSize="12sp"
+                                android:text="@string/chart_one_hour"
+                                android:layout_gravity="center"
+                                android:fontFamily="sans-serif-medium" />
+
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <FrameLayout
+                            android:id="@+id/flMainSixHours"
+                            android:layout_width="36dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:background="?attr/chartSelectionBackgroundResource" >
+
+                            <TextView
+                                android:id="@+id/txtMainSixHours"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_hint"
+                                android:textSize="12sp"
+                                android:text="@string/chart_six_hours"
+                                android:layout_gravity="center"
+                                android:fontFamily="sans-serif-medium" />
+
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <FrameLayout
+                            android:id="@+id/flMainTwelveHours"
+                            android:layout_width="36dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:background="?attr/chartSelectionBackgroundResource" >
+
+                            <TextView
+                                android:id="@+id/txtMainTwelveHours"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_hint"
+                                android:textSize="12sp"
+                                android:text="@string/chart_twelve_hours"
+                                android:layout_gravity="center"
+                                android:fontFamily="sans-serif-medium" />
+
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <FrameLayout
+                            android:id="@+id/flMainOneDay"
+                            android:layout_width="36dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:background="?attr/chartSelectionBackgroundResource" >
+
+                            <TextView
+                                android:id="@+id/txtMainOneDay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_hint"
+                                android:textSize="12sp"
+                                android:text="@string/chart_one_day"
+                                android:layout_gravity="center"
+                                android:fontFamily="sans-serif-medium" />
+
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <FrameLayout
+                            android:id="@+id/flMainThreeDays"
+                            android:layout_width="36dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:background="?attr/chartSelectionBackgroundResource" >
+
+                            <TextView
+                                android:id="@+id/txtMainThreeDays"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_hint"
+                                android:textSize="12sp"
+                                android:text="@string/chart_three_days"
+                                android:layout_gravity="center"
+                                android:fontFamily="sans-serif-medium" />
+
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <FrameLayout
+                            android:id="@+id/flMainAll"
+                            android:layout_width="36dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:background="?attr/chartSelectionBackgroundResource" >
+
+                            <TextView
+                                android:id="@+id/txtMainAll"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color_hint"
+                                android:textSize="12sp"
+                                android:text="@string/chart_all"
+                                android:layout_gravity="center"
+                                android:fontFamily="sans-serif-medium" />
+
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/flChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <View
+                        android:layout_width="56dp"
+                        android:layout_height="match_parent"
+                        android:background="?attr/chartOverlayColor"/>
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/chartMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?attr/colorBackgroundSecondary" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:id="@+id/flMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/tabBarLayoutSize" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vpMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/tabBarLayoutSize"
+                        android:visibility="gone" />
+
+                    <com.ogaclejapan.smarttablayout.SmartTabLayout
+                        android:id="@+id/stbMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/tabBarLayoutSize"
+                        android:background="?attr/colorBackgroundSecondary"
+                        app:stl_customTabTextLayoutId="@layout/tab_item"
+                        app:stl_distributeEvenly="true"
+                        app:stl_dividerThickness="0dp"
+                        app:stl_indicatorInterpolation="linear"
+                        app:stl_indicatorThickness="0dp"
+                        app:stl_overlineThickness="0dp"
+                        app:stl_underlineThickness="0dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMainTopBar"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtMainNavLeftTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:textColor="?attr/textColorPrimary"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/txtMainNavLeftSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtMainNavRightTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:textColor="?attr/textColorPrimary"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/txtMainNavRightSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

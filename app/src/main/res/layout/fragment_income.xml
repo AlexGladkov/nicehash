@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorBackgroundPrimary" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/income_hour"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="?attr/colorPrimary"
+                android:includeFontPadding="false" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtIncomeHourValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="?attr/textColorPrimary" />
+
+                <TextView
+                    android:id="@+id/txtIncomeHourCurrency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/currency_rub"
+                    android:layout_marginStart="4dp"
+                    android:includeFontPadding="false"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtIncomeHourBtc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_hint"
+                    android:includeFontPadding="false"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/currency_btc"
+                    android:layout_marginStart="2dp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/text_color_hint"
+                    android:textSize="8sp"
+                    tools:ignore="SmallSp" />
+
+            </LinearLayout>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/income_day"
+                android:layout_marginTop="12dp"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="?attr/colorPrimary"
+                android:includeFontPadding="false" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtIncomeDayValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="?attr/textColorPrimary" />
+
+                <TextView
+                    android:id="@+id/txtIncomeDayCurrency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/currency_rub"
+                    android:layout_marginStart="4dp"
+                    android:includeFontPadding="false"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtIncomeDayBtc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_hint"
+                    android:includeFontPadding="false"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/currency_btc"
+                    android:layout_marginStart="2dp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/text_color_hint"
+                    android:textSize="8sp"
+                    tools:ignore="SmallSp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha="0.2"
+        android:background="?attr/dividerColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/income_week"
+                android:textSize="12sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="?attr/colorPrimary"
+                android:includeFontPadding="false" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtIncomeWeekValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="?attr/textColorPrimary" />
+
+                <TextView
+                    android:id="@+id/txtIncomeWeekCurrency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/currency_rub"
+                    android:layout_marginStart="4dp"
+                    android:includeFontPadding="false"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtIncomeWeekBtc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_hint"
+                    android:includeFontPadding="false"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/currency_btc"
+                    android:layout_marginStart="2dp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/text_color_hint"
+                    android:textSize="8sp"
+                    tools:ignore="SmallSp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/income_month"
+                android:textSize="12sp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="?attr/colorPrimary"
+                android:includeFontPadding="false" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtIncomeMonthValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="?attr/textColorPrimary" />
+
+                <TextView
+                    android:id="@+id/txtIncomeMonthCurrency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/currency_rub"
+                    android:layout_marginStart="4dp"
+                    android:includeFontPadding="false"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtIncomeMonthBtc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_hint"
+                    android:includeFontPadding="false"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/currency_btc"
+                    android:layout_marginStart="2dp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/text_color_hint"
+                    android:textSize="8sp"
+                    tools:ignore="SmallSp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.2"
+        android:background="?attr/dividerColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_hint"
+                    android:textSize="12sp"
+                    android:includeFontPadding="false"
+                    android:text="@string/income_btc_usd" />
+
+                <TextView
+                    android:id="@+id/txtIncomeBtcUsd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:includeFontPadding="false"
+                    android:textColor="?attr/textColorPrimary" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="16dp"
+            android:alpha="0.2"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/dividerColor" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/txtIncomeCurrency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_hint"
+                    android:includeFontPadding="false"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txtIncomeCurrencyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:includeFontPadding="false"
+                    android:textColor="?attr/textColorPrimary" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha="0.2"
+        android:background="?attr/dividerColor" />
+
+</LinearLayout>

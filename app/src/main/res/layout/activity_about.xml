@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v4.widget.NestedScrollView
+        android:background="?attr/colorBackgroundPrimary"
+        android:id="@+id/scroll_about"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:background="?attr/colorBackgroundSecondary"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:background="?attr/aboutBackgroundResource"
+                android:id="@+id/rl_about_header"
+                android:layout_height="@dimen/aboutHeader"
+                android:layout_width="match_parent">
+
+                <ImageView
+                    android:layout_height="@dimen/aboutHeaderImageTop"
+                    android:layout_marginTop="@dimen/aboutHeaderImageTop"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/header_glow" />
+
+                <ImageView
+                    android:id="@+id/img_about_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="@dimen/aboutIconSize"
+                    android:layout_marginTop="@dimen/aboutHeaderImageTop"
+                    android:layout_width="@dimen/aboutIconSize"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="top"
+                    android:id="@+id/txt_about_app_name"
+                    android:includeFontPadding="false"
+                    android:layout_below="@+id/img_about_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:letterSpacing="-0.02"
+                    android:text="@string/app_name"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/txt_about_subtitle"
+                    android:includeFontPadding="false"
+                    android:layout_below="@+id/txt_about_app_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingMultiplier="1.071"
+                    android:text="@string/about_subline"
+                    android:textColor="?attr/textColorHint"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@android:color/transparent"
+                android:layout_below="@+id/rl_about_header"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-40dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:fontFamily="sans-serif-medium"
+                    android:includeFontPadding="false"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/about_learn_more"
+                    android:textColor="?attr/textColorSecondary"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:background="?attr/colorBackgroundPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:background="?attr/dividerColor"
+                        android:layout_height="@dimen/default_separator_size"
+                        android:layout_width="match_parent" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_about_website"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="11.5dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="11.5dp"
+                            android:layout_width="40dp"
+                            android:src="@drawable/ic_icons_settings_browser" />
+
+                        <LinearLayout
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:includeFontPadding="false"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="@string/about_website"
+                                android:textColor="?attr/textColorPrimary"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:includeFontPadding="false"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:layout_width="wrap_content"
+                                android:text="@string/about_website_subtitle"
+                                android:textColor="?attr/textColorHint"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:background="?attr/dividerColor"
+                        android:layout_height="@dimen/default_separator_size"
+                        android:layout_marginStart="72dp"
+                        android:layout_width="match_parent" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_about_twitter"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="11.5dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_width="40dp"
+                            android:src="@drawable/ic_icons_settings_avatar" />
+
+                        <LinearLayout
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:includeFontPadding="false"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="@string/about_twitter"
+                                android:textColor="?attr/textColorPrimary"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:includeFontPadding="false"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:layout_width="wrap_content"
+                                android:text="@string/about_twitter_subtitle"
+                                android:textColor="?attr/textColorHint"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:background="?attr/dividerColor"
+                        android:layout_height="@dimen/default_separator_size"
+                        android:layout_width="match_parent" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:fontFamily="sans-serif-medium"
+                    android:includeFontPadding="false"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/about_authors"
+                    android:textColor="?attr/textColorSecondary"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:background="?attr/colorBackgroundPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:background="?attr/dividerColor"
+                        android:layout_height="@dimen/default_separator_size"
+                        android:layout_width="match_parent" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_about_author"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_about_client"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="11.5dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="11.5dp"
+                            android:layout_width="40dp" />
+
+                        <LinearLayout
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:includeFontPadding="false"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="@string/about_client"
+                                android:textColor="?attr/textColorPrimary"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:includeFontPadding="false"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:layout_width="wrap_content"
+                                android:text="@string/about_client_subtitle"
+                                android:textColor="?attr/textColorHint"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:background="?attr/dividerColor"
+                        android:layout_height="@dimen/default_separator_size"
+                        android:layout_marginStart="72dp"
+                        android:layout_width="match_parent" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_about_developer"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_about_author"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="11.5dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_width="40dp" />
+
+                        <LinearLayout
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:includeFontPadding="false"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="@string/about_author"
+                                android:textColor="?attr/textColorPrimary"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:includeFontPadding="false"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:layout_width="wrap_content"
+                                android:text="@string/about_author_subtitle"
+                                android:textColor="?attr/textColorHint"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:background="?attr/dividerColor"
+                        android:layout_height="@dimen/default_separator_size"
+                        android:layout_width="match_parent" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:fontFamily="sans-serif-medium"
+                    android:includeFontPadding="false"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="wrap_content"
+                    android:text="@string/about_apps"
+                    android:textColor="?attr/textColorSecondary"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:background="?attr/colorBackgroundPrimary"
+                    android:id="@+id/ll_about_saver"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:background="?attr/dividerColor"
+                        android:layout_height="@dimen/default_separator_size"
+                        android:layout_width="match_parent" />
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_about_app"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="11.5dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="11.5dp"
+                            android:layout_width="40dp" />
+
+                        <LinearLayout
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:includeFontPadding="false"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="@string/about_apps_saver"
+                                android:textColor="?attr/textColorPrimary"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:includeFontPadding="false"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:layout_width="wrap_content"
+                                android:text="@string/about_apps_saver_subtitle"
+                                android:textColor="?attr/textColorHint"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:background="?attr/dividerColor"
+                        android:layout_height="@dimen/default_separator_size"
+                        android:layout_width="match_parent" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtAboutVersion"
+                    android:alpha="0.6"
+                    android:includeFontPadding="false"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="?attr/textColorHint" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageView
+        android:background="?attr/buttonRipple"
+        android:id="@+id/imgAboutBack"
+        android:layout_height="56dp"
+        android:layout_width="56dp"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_is_control_back"
+        android:tint="?attr/iconTint" />
+
+</FrameLayout>

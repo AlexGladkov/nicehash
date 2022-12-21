@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="avatarSize">56dp</dimen>
+    <dimen name="settingsIconSize">24dp</dimen>
+    <dimen name="settingsMenuSize">56dp</dimen>
+
+    <dimen name="default_separator_size">1dp</dimen>
+
+    <dimen name="theme_inverse_margin">40dp</dimen>
+    <dimen name="theme_inverse_margin_zero">0dp</dimen>
+
+    <dimen name="aboutHeader">296dp</dimen>
+    <dimen name="aboutIconSize">88dp</dimen>
+    <dimen name="aboutHeaderImageTop">62dp</dimen>
+    <dimen name="aboutHeaderImage">44dp</dimen>
+
+    <dimen name="defaultButtonSize">56dp</dimen>
+    <dimen name="defaultBigIconSize">40dp</dimen>
+    <dimen name="defaultIconSize">24dp</dimen>
+
+    <dimen name="notificationsMenuSize">56dp</dimen>
+
+    <dimen name="tabBarLayoutSize">40dp</dimen>
+    <dimen name="settingThemePicker">40dp</dimen>
+    <dimen name="loaderSize">40dp</dimen>
+</resources>

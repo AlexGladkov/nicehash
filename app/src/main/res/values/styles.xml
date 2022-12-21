@@ -1,0 +1,159 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TransparentTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!--<item name="android:backgroundDimEnabled">false</item>-->
+    </style>
+
+    <style name="DarkTransparent" parent="TransparentTheme">
+        <item name="colorBackgroundPrimary">@color/dark_background_primary</item>
+        <item name="colorBackgroundSecondary">@color/dark_background_secondary</item>
+        <item name="iconTint">@color/dark_tint_color</item>
+        <item name="dividerColor">@color/dark_divider_color</item>
+        <item name="textColorPrimary">@color/dark_text_color_primary</item>
+        <item name="textColorSecondary">@color/dark_text_color_secondary</item>
+        <item name="textColorThird">@color/dark_text_color_third</item>
+        <item name="textColorHint">@color/text_color_hint</item>
+        <item name="textColorHighlight">@color/dark_text_color_highlight</item>
+
+        <item name="marginStartPickerInverse">@dimen/theme_inverse_margin</item>
+        <item name="marginEndPickerInverse">@dimen/theme_inverse_margin_zero</item>
+        <item name="buttonRipple">@drawable/dark_ripple_pressed</item>
+        <item name="aboutBackgroundResource">@drawable/dark_about_header</item>
+        <item name="chartSelectionBackgroundResource">@drawable/dark_chart_time_background</item>
+    </style>
+
+    <style name="LightTransparent" parent="TransparentTheme">
+        <item name="colorBackgroundPrimary">@color/light_background_primary</item>
+        <item name="colorBackgroundSecondary">@color/light_background_secondary</item>
+        <item name="iconTint">@color/light_tint_color</item>
+        <item name="dividerColor">@color/light_divider_color</item>
+        <item name="textColorPrimary">@color/light_text_color_primary</item>
+        <item name="textColorSecondary">@color/light_text_color_secondary</item>
+        <item name="textColorThird">@color/light_text_color_third</item>
+        <item name="textColorHint">@color/text_color_hint</item>
+        <item name="textColorHighlight">@color/light_text_color_highlight</item>
+
+        <item name="marginStartPickerInverse">@dimen/theme_inverse_margin_zero</item>
+        <item name="marginEndPickerInverse">@dimen/theme_inverse_margin</item>
+        <item name="buttonRipple">@drawable/light_ripple_pressed</item>
+        <item name="aboutBackgroundResource">@drawable/light_about_header</item>
+        <item name="chartSelectionBackgroundResource">@drawable/light_chart_time_background</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorBackgroundPrimary">@color/dark_background_primary</item>
+        <item name="colorBackgroundSecondary">@color/dark_background_secondary</item>
+        <item name="iconTint">@color/dark_tint_color</item>
+        <item name="dividerColor">@color/dark_divider_color</item>
+        <item name="textColorPrimary">@color/dark_text_color_primary</item>
+        <item name="textColorSecondary">@color/dark_text_color_secondary</item>
+        <item name="textColorThird">@color/dark_text_color_third</item>
+        <item name="textColorHint">@color/text_color_hint</item>
+        <item name="textColorHighlight">@color/dark_text_color_highlight</item>
+        <item name="chartOverlayColor">@color/dark_chart_overlay_color</item>
+
+        <item name="themePaletteSelected">@drawable/dark_theme_palette_selected</item>
+        <item name="tabShape">@drawable/tab_shape_dark</item>
+
+        <item name="buttonRipple">@drawable/dark_ripple_pressed</item>
+        <item name="aboutBackgroundResource">@drawable/dark_about_header</item>
+        <item name="chartSelectionBackgroundResource">@drawable/dark_chart_time_background</item>
+        <item name="colorPickerTitle">@drawable/dark_theme_picker_subtitle</item>
+        <item name="colorPickerTitleInverse">@color/light_background_primary</item>
+        <item name="colorPickerRed">@drawable/dark_red_palette</item>
+        <item name="colorPickerBlue">@drawable/dark_blue_palette</item>
+        <item name="colorPickerGreen">@drawable/dark_green_palette</item>
+        <item name="colorPickerOrange">@drawable/dark_orange_palette</item>
+        <item name="colorPickerPurple">@drawable/dark_purple_palette</item>
+    </style>
+
+    <style name="LightTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorBackgroundPrimary">@color/light_background_primary</item>
+        <item name="colorBackgroundSecondary">@color/light_background_secondary</item>
+        <item name="iconTint">@color/light_tint_color</item>
+        <item name="dividerColor">@color/light_divider_color</item>
+        <item name="textColorPrimary">@color/light_text_color_primary</item>
+        <item name="textColorSecondary">@color/light_text_color_secondary</item>
+        <item name="textColorThird">@color/light_text_color_third</item>
+        <item name="textColorHint">@color/text_color_hint</item>
+        <item name="textColorHighlight">@color/light_text_color_highlight</item>
+        <item name="chartOverlayColor">@color/light_chart_overlay_color</item>
+
+        <item name="themePaletteSelected">@drawable/light_theme_palette_selected</item>
+        <item name="tabShape">@drawable/tab_shape_light</item>
+
+        <item name="buttonRipple">@drawable/light_ripple_pressed</item>
+        <item name="aboutBackgroundResource">@drawable/light_about_header</item>
+        <item name="chartSelectionBackgroundResource">@drawable/light_chart_time_background</item>
+        <item name="colorPickerTitle">@drawable/light_theme_picker_subtitle</item>
+        <item name="colorPickerTitleInverse">@color/dark_background_primary</item>
+        <item name="colorPickerRed">@drawable/light_red_palette</item>
+        <item name="colorPickerBlue">@drawable/light_blue_palette</item>
+        <item name="colorPickerGreen">@drawable/light_green_palette</item>
+        <item name="colorPickerOrange">@drawable/light_orange_palette</item>
+        <item name="colorPickerPurple">@drawable/light_purple_palette</item>
+    </style>
+
+    <style name="DarkBlueTheme" parent="DarkTheme">
+        <item name="colorPrimary">@color/dark_blue_color_primary</item>
+        <item name="colorBackgroundHighlight">@color/dark_blue_background_highlight</item>
+    </style>
+
+    <style name="DarkOrangeTheme" parent="DarkTheme">
+        <item name="colorPrimary">@color/dark_orange_color_primary</item>
+        <item name="colorBackgroundHighlight">@color/dark_orange_background_highlight</item>
+    </style>
+
+    <style name="DarkGreenTheme" parent="DarkTheme">
+        <item name="colorPrimary">@color/dark_green_color_primary</item>
+        <item name="colorBackgroundHighlight">@color/dark_green_background_highlight</item>
+    </style>
+
+    <style name="DarkRedTheme" parent="DarkTheme">
+        <item name="colorPrimary">@color/dark_red_color_primary</item>
+        <item name="colorBackgroundHighlight">@color/dark_red_background_highlight</item>
+    </style>
+
+    <style name="DarkPurpleTheme" parent="DarkTheme">
+        <item name="colorPrimary">@color/dark_purple_color_primary</item>
+        <item name="colorBackgroundHighlight">@color/dark_purple_background_highlight</item>
+    </style>
+
+    <style name="LightBlueTheme" parent="LightTheme">
+        <item name="colorPrimary">@color/light_blue_color_primary</item>
+        <item name="colorBackgroundHighlight">@color/light_blue_background_highlight</item>
+    </style>
+
+    <style name="LightOrangeTheme" parent="LightTheme">
+        <item name="colorPrimary">@color/light_orange_color_primary</item>
+        <item name="colorBackgroundHighlight">@color/light_orange_background_highlight</item>
+    </style>
+
+    <style name="LightGreenTheme" parent="LightTheme">
+        <item name="colorPrimary">@color/light_green_color_primary</item>
+        <item name="colorBackgroundHighlight">@color/light_green_background_highlight</item>
+    </style>
+
+    <style name="LightRedTheme" parent="LightTheme">
+        <item name="colorPrimary">@color/light_red_color_primary</item>
+        <item name="colorBackgroundHighlight">@color/light_red_background_highlight</item>
+    </style>
+
+    <style name="LightPurpleTheme" parent="LightTheme">
+        <item name="colorPrimary">@color/light_purple_color_primary</item>
+        <item name="colorBackgroundHighlight">@color/light_purple_background_highlight</item>
+    </style>
+</resources>

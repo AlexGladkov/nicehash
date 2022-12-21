@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dev.nicehash">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/LightBlueTheme" >
+        <activity android:name=".app.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".app.activities.ChooseActivity"
+            android:theme="@style/TransparentTheme" />
+
+        <activity android:name=".app.activities.SettingsActivity"
+            android:theme="@style/LightBlueTheme" />
+
+        <activity android:name=".app.activities.MainActivity" />
+        <activity android:name=".app.activities.AddActivity" />
+        <activity android:name=".app.activities.NotificationsActivity" />
+        <activity android:name=".app.activities.ThemesActivity" />
+        <activity android:name=".app.activities.CurrenciesActivity" />
+        <activity android:name=".app.activities.ServiceStatusActivity" />
+        <activity android:name=".app.activities.PurchasesActivity" />
+        <activity android:name=".app.activities.AboutActivity" />
+        <activity android:name=".app.activities.DetailActivity" />
+    </application>
+
+</manifest>

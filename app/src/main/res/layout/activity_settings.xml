@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorBackgroundSecondary" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbSettings"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="?attr/colorBackgroundPrimary"
+        android:layout_marginTop="24dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgSettingsBack"
+                android:layout_width="@dimen/avatarSize"
+                android:layout_height="@dimen/avatarSize"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_is_control_back"
+                android:tint="?attr/iconTint"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/txtMainTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif"
+                android:includeFontPadding="false"
+                android:textColor="?attr/iconTint"
+                android:text="@string/title_settings"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnAction"
+                android:layout_width="@dimen/defaultButtonSize"
+                android:layout_height="@dimen/defaultButtonSize"
+                android:src="@drawable/ic_control_refresh"
+                android:tint="#FFFFFF"
+                android:layout_gravity="center_vertical"
+                android:padding="16dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorBackgroundSecondary"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginTop="24dp"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:id="@+id/btnSettingsNotifications"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settingsMenuSize"
+                android:background="?attr/colorBackgroundPrimary" >
+
+                <ImageView
+                    android:layout_width="@dimen/settingsIconSize"
+                    android:layout_height="@dimen/settingsIconSize"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_bell"
+                    android:tint="?attr/iconTint"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/settings_notifications"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="-0.5dp"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:id="@+id/btnSettingsThemes"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settingsMenuSize"
+                android:background="?attr/colorBackgroundPrimary" >
+
+                <ImageView
+                    android:layout_width="@dimen/settingsIconSize"
+                    android:layout_height="@dimen/settingsIconSize"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_theme"
+                    android:tint="?attr/iconTint"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/settings_themes"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="-0.5dp"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:id="@+id/btnSettingsDefaultTab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settingsMenuSize"
+                android:background="?attr/colorBackgroundPrimary" >
+
+                <ImageView
+                    android:layout_width="@dimen/settingsIconSize"
+                    android:layout_height="@dimen/settingsIconSize"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_landing"
+                    android:tint="?attr/iconTint"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/settings_default_tab"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtTabValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/settings_income"
+                    android:textColor="?attr/textColorThird" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="-0.5dp"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:id="@+id/btnSettingsLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settingsMenuSize"
+                android:background="?attr/colorBackgroundPrimary" >
+
+                <ImageView
+                    android:layout_width="@dimen/settingsIconSize"
+                    android:layout_height="@dimen/settingsIconSize"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_language"
+                    android:tint="?attr/iconTint"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/settings_language"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtLanguageValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/settings_language_chinese"
+                    android:textColor="?attr/textColorThird" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginTop="-0.5dp"
+                android:background="?attr/dividerColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/textColorSecondary"
+                android:text="@string/settings_nicehash"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginTop="8dp"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:id="@+id/btnSettingsCurrencies"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settingsMenuSize"
+                android:background="?attr/colorBackgroundPrimary" >
+
+                <ImageView
+                    android:layout_width="@dimen/settingsIconSize"
+                    android:layout_height="@dimen/settingsIconSize"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_exchange"
+                    android:tint="?attr/iconTint"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/settings_currencies"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:layout_marginStart="72dp"
+                android:alpha="0.2"
+                android:layout_marginTop="-0.5dp"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:id="@+id/btnSettingsService"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settingsMenuSize"
+                android:background="?attr/colorBackgroundPrimary" >
+
+                <ImageView
+                    android:layout_width="@dimen/settingsIconSize"
+                    android:layout_height="@dimen/settingsIconSize"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_status"
+                    android:tint="?attr/iconTint"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/settings_status"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:background="?attr/dividerColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginTop="24dp"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:id="@+id/btnSettingsPurchases"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settingsMenuSize"
+                android:background="?attr/colorBackgroundPrimary" >
+
+                <ImageView
+                    android:layout_width="@dimen/settingsIconSize"
+                    android:layout_height="@dimen/settingsIconSize"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_star"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/settings_purchases"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:background="?attr/dividerColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:layout_marginTop="24dp"
+                android:alpha="0.2"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:id="@+id/btnSettingsAbout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settingsMenuSize"
+                android:background="?attr/colorBackgroundPrimary" >
+
+                <ImageView
+                    android:layout_width="@dimen/settingsIconSize"
+                    android:layout_height="@dimen/settingsIconSize"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_about"
+                    android:tint="?attr/iconTint"
+                    android:layout_marginStart="16dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/settings_about"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:background="?attr/dividerColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_credits"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:textColor="?attr/textColorSecondary"
+                android:textSize="12sp"
+                android:layout_gravity="center_horizontal" />
+            
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

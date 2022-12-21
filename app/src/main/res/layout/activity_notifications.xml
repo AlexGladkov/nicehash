@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackgroundSecondary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbSettings"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginTop="24dp"
+        android:background="?attr/colorBackgroundPrimary"
+        android:contentInsetStart="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgNotificationsBack"
+                android:layout_width="@dimen/avatarSize"
+                android:layout_height="@dimen/avatarSize"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:padding="16dp"
+                android:src="@drawable/ic_is_control_back"
+                android:tint="?attr/iconTint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text="@string/settings_notifications"
+                android:textColor="?attr/iconTint"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnAction"
+                android:layout_width="@dimen/defaultButtonSize"
+                android:layout_height="@dimen/defaultButtonSize"
+                android:layout_gravity="center_vertical"
+                android:padding="16dp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/notifications_nicehash"
+                android:textColor="?attr/textColorSecondary"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginTop="8dp"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notificationsMenuSize"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/notifications_payments"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16dp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/swNotificationsPayments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="-0.5dp"
+                android:alpha="0.2"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notificationsMenuSize"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/notifications_maintenance"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16dp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/swNotificationsMaintenance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:layout_marginTop="-0.5dp"
+                android:alpha="0.2"
+                android:background="?attr/dividerColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/notifications_worker"
+                android:textColor="?attr/textColorSecondary"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:layout_marginTop="8dp"
+                android:alpha="0.2"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notificationsMenuSize"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/notifications_top"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16dp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/swNotificationsTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="-0.5dp"
+                android:alpha="0.2"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notificationsMenuSize"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/notifications_bottom"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16dp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/swNotificationsBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="-0.5dp"
+                android:alpha="0.2"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notificationsMenuSize"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/notifications_strix"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16dp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/swNotificationsStrix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:layout_marginTop="-0.5dp"
+                android:alpha="0.2"
+                android:background="?attr/dividerColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginTop="24dp"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notificationsMenuSize"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/notifications_sound"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/swNotificationsSound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="-0.5dp"
+                android:background="?attr/dividerColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notificationsMenuSize"
+                android:background="?attr/colorBackgroundPrimary"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="32dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:includeFontPadding="false"
+                    android:text="@string/notifications_vibro"
+                    android:textColor="?attr/textColorPrimary"
+                    android:textSize="16dp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/swNotificationsVibro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_separator_size"
+                android:alpha="0.2"
+                android:layout_marginTop="-0.5dp"
+                android:layout_marginBottom="32dp"
+                android:background="?attr/dividerColor" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

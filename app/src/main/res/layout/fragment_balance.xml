@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorBackgroundPrimary" >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        android:id="@+id/cpvBalance"
+        android:layout_width="@dimen/loaderSize"
+        android:layout_height="@dimen/loaderSize"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:cpv_color="?attr/colorPrimary"
+        app:cpv_animAutostart="true"
+        app:cpv_indeterminate="true" />
+
+    <TextView
+        android:id="@+id/txtBalanceNoItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/text_color_hint"
+        android:text="@string/balance_no_items" />
+
+</LinearLayout>

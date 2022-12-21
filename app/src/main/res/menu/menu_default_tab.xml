@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/default_tab_income"
+        android:title="@string/settings_income" />
+
+    <item
+        android:id="@+id/default_tab_balance"
+        android:title="@string/settings_balance" />
+
+    <item
+        android:id="@+id/default_tab_payouts"
+        android:title="@string/settings_payouts" />
+
+    <item
+        android:id="@+id/default_tab_workers"
+        android:title="@string/settings_workers" />
+</menu>

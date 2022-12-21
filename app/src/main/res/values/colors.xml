@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="text_color_hint">#7A8A99</color>
+    <color name="highlight_divider_color">#CBD9EB</color>
+    <color name="action_tint_color">#7A8A99</color>
+    <color name="header_tint_color">#7A8A99</color>
+    <color name="settings_button_blue">#4C88FF</color>
+    <color name="settings_button_gray">#7A8A99</color>
+    <color name="search_hint_color">#807A8A99</color>
+    <color name="support_color">#FF5500</color>
+    <color name="thanks_color">#F2FF5500</color>
+    <color name="popover_button_tint_color">#FFFFFF</color>
+    <color name="scrim_color">#CC000000</color>
+    <color name="content_color">#99000000</color>
+    <color name="content_bottom_color">#CC000000</color>
+    <color name="content_ripple_color">#33FFFFFF</color>
+
+    <color name="dark_background_primary">#23282D</color> <!-- BG -->
+    <color name="dark_background_secondary">#191E23</color> <!-- BG Low -->
+    <color name="dark_status_bar_color">#E623282D</color>
+    <color name="dark_tint_color">#7A8A99</color> <!-- Key Grey -->
+    <color name="dark_divider_color">#7A8A99</color> <!-- -->
+    <color name="dark_text_color_primary">#F2F4F5</color> <!-- Body -->
+    <color name="dark_text_color_secondary">#CC7A8A99</color> <!-- -->
+    <color name="dark_text_color_third">#8FA1B3</color> <!-- -->
+    <color name="dark_text_color_highlight">#FF974D</color> <!-- -->
+    <color name="dark_ripple_color">#14181C</color> <!-- -->
+    <color name="dark_chart_selection_line">#F2F4F5</color> <!-- -->
+    <color name="dark_chart_overlay_color">#191E23</color> <!-- -->
+
+    <color name="light_background_primary">#FFFFFF</color>
+    <color name="light_background_secondary">#F3F4F5</color>
+    <color name="light_status_bar_color">#F2B6BBBF</color>
+    <color name="light_tint_color">#7A8A99</color>
+    <color name="light_divider_color">#7A8A99</color>
+    <color name="light_text_color_primary">#3D454C</color>
+    <color name="light_text_color_secondary">#CC7A8A99</color>
+    <color name="light_text_color_third">#66737F</color>
+    <color name="light_text_color_highlight">#FF6619</color>
+    <color name="light_ripple_color">#E6E9EC</color>
+    <color name="light_chart_selection_line">#3D454D</color>
+    <color name="light_chart_overlay_color">#80F2F4F5</color>
+
+    <color name="dark_blue_color_primary">#99BBFF</color>
+    <color name="dark_blue_background_highlight">#99BBFF</color>
+    <color name="dark_orange_color_primary">#FF974D</color>
+    <color name="dark_orange_background_highlight">#FF974D</color>
+    <color name="dark_green_color_primary">#7EE6C3</color>
+    <color name="dark_green_background_highlight">#7EE6C3</color>
+    <color name="dark_red_color_primary">#FF5975</color>
+    <color name="dark_red_background_highlight">#FF5975</color>
+    <color name="dark_purple_color_primary">#D580FF</color>
+    <color name="dark_purple_background_highlight">#D580FF</color>
+
+    <color name="light_blue_color_primary">#4D88FF</color>
+    <color name="light_blue_background_highlight">#4D88FF</color>
+    <color name="light_orange_color_primary">#FF6619</color>
+    <color name="light_orange_background_highlight">#FF6619</color>
+    <color name="light_green_color_primary">#12B37D</color>
+    <color name="light_green_background_highlight">#12B37D</color>
+    <color name="light_red_color_primary">#E63956</color>
+    <color name="light_red_background_highlight">#E63956</color>
+    <color name="light_purple_color_primary">#AD57D9</color>
+    <color name="light_purple_background_highlight">#AD57D9</color>
+</resources>
