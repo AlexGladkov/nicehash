@@ -27,10 +27,7 @@ import com.dev.nicehash.domain.repositories.MoneyRepository
 import com.dev.nicehash.enums.Keys
 import com.dev.nicehash.enums.ScreenKeys
 import com.dev.nicehash.helpers.ListConfig
-import kotlinx.android.synthetic.main.activity_choose.*
-import kotlinx.android.synthetic.main.fragment_balance.*
-import ru.terrakok.cicerone.Navigator
-import ru.terrakok.cicerone.android.SupportAppNavigator
+import com.github.terrakok.cicerone.Navigator
 import javax.inject.Inject
 
 /**
@@ -74,7 +71,7 @@ class BalanceFragment: BaseContainer(), BalanceView {
         super.onCreate(savedInstanceState)
         mAdapter.attachCallback(object: BaseAdapterCallback<Balance> {
             override fun onItemClick(model: Balance, view: View) {
-                (activity as? RouterProvider)?.getRouter()?.replaceScreen(ScreenKeys.Detail.value, model)
+//                (activity as? RouterProvider)?.getRouter()?.replaceScreen(ScreenKeys.Detail.value, model)
             }
 
             override fun onLongClick(model: Balance, view: View): Boolean {
@@ -94,7 +91,7 @@ class BalanceFragment: BaseContainer(), BalanceView {
                     .setHasFixedSize(true)
                     .setHasNestedScroll(true)
                     .build(it)
-            listConfig.applyConfig(it, recyclerBalance)
+//            listConfig.applyConfig(it, recyclerBalance)
         }
 
         balancePresenter.fetchUnpaid(miner = arguments?.getString(Keys.Miner.value).orEmpty(),
@@ -105,30 +102,32 @@ class BalanceFragment: BaseContainer(), BalanceView {
     }
 
     override fun getNavigator(): Navigator? {
-        return if (navigator == null) {
-            navigator = object: SupportAppNavigator(activity, childFragmentManager, R.id.container) {
-                override fun createActivityIntent(context: Context?, screenKey: String?, data: Any?): Intent? {
-                    return when (screenKey) {
-                        else -> null
-                    }
-                }
+//        return if (navigator == null) {
+//            navigator = object: SupportAppNavigator(activity, childFragmentManager, R.id.container) {
+//                override fun createActivityIntent(context: Context?, screenKey: String?, data: Any?): Intent? {
+//                    return when (screenKey) {
+//                        else -> null
+//                    }
+//                }
+//
+//                override fun createFragment(screenKey: String, data: Any?): Fragment? {
+//                    return when (screenKey) {
+//                        else -> null
+//                    }
+//                }
+//
+//                override fun exit() {
+//                    super.exit()
+//                    activity?.let { (it as RouterProvider).getRouter().exit() }
+//                }
+//            }
+//
+//            navigator as SupportAppNavigator
+//        } else {
+//            navigator!!
+//        }
 
-                override fun createFragment(screenKey: String, data: Any?): Fragment? {
-                    return when (screenKey) {
-                        else -> null
-                    }
-                }
-
-                override fun exit() {
-                    super.exit()
-                    activity?.let { (it as RouterProvider).getRouter().exit() }
-                }
-            }
-
-            navigator as SupportAppNavigator
-        } else {
-            navigator!!
-        }
+        return null
     }
 
     // MARK: - Base implementation
@@ -148,8 +147,8 @@ class BalanceFragment: BaseContainer(), BalanceView {
             mAdapter.setList(dataList = data)
         }
 
-        recyclerBalance.visibility = View.VISIBLE
-        txtBalanceNoItems.visibility = View.GONE
+//        recyclerBalance.visibility = View.VISIBLE
+//        txtBalanceNoItems.visibility = View.GONE
     }
 
     override fun setupBarItems(unpaid: String, usd: String) {
@@ -157,18 +156,18 @@ class BalanceFragment: BaseContainer(), BalanceView {
     }
 
     override fun startLoading() {
-        cpvBalance.visibility = View.VISIBLE
-        recyclerBalance.visibility = View.GONE
-        txtBalanceNoItems.visibility = View.GONE
+//        cpvBalance.visibility = View.VISIBLE
+//        recyclerBalance.visibility = View.GONE
+//        txtBalanceNoItems.visibility = View.GONE
     }
 
     override fun endLoading() {
-        cpvBalance.visibility = View.GONE
+//        cpvBalance.visibility = View.GONE
     }
 
     override fun showNoItems() {
-        recyclerBalance.visibility = View.GONE
-        txtBalanceNoItems.visibility = View.VISIBLE
+//        recyclerBalance.visibility = View.GONE
+//        txtBalanceNoItems.visibility = View.VISIBLE
     }
 
     override fun showError(message: String) {

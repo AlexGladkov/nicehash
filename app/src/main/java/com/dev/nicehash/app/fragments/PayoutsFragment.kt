@@ -24,10 +24,7 @@ import com.dev.nicehash.domain.models.Payout
 import com.dev.nicehash.domain.repositories.MinerRepository
 import com.dev.nicehash.enums.Keys
 import com.dev.nicehash.helpers.ListConfig
-import kotlinx.android.synthetic.main.fragment_balance.*
-import kotlinx.android.synthetic.main.fragment_payouts.*
-import ru.terrakok.cicerone.Navigator
-import ru.terrakok.cicerone.android.SupportAppNavigator
+import com.github.terrakok.cicerone.Navigator
 import java.text.DecimalFormat
 import javax.inject.Inject
 
@@ -82,7 +79,7 @@ class PayoutsFragment: BaseContainer(), PayoutsView {
                     .setHasFixedSize(true)
                     .setHasNestedScroll(true)
                     .build(it)
-            listConfig.applyConfig(it, recyclerPayouts)
+//            listConfig.applyConfig(it, recyclerPayouts)
         }
 
         payoutsPresenter.fetchPayouts(miner = arguments?.getString(Keys.Miner.value).orEmpty(),
@@ -91,30 +88,32 @@ class PayoutsFragment: BaseContainer(), PayoutsView {
     }
 
     override fun getNavigator(): Navigator? {
-        return if (navigator == null) {
-            navigator = object: SupportAppNavigator(activity, childFragmentManager, R.id.container) {
-                override fun createActivityIntent(context: Context?, screenKey: String?, data: Any?): Intent? {
-                    return when (screenKey) {
-                        else -> null
-                    }
-                }
+//        return if (navigator == null) {
+//            navigator = object: SupportAppNavigator(activity, childFragmentManager, R.id.container) {
+//                override fun createActivityIntent(context: Context?, screenKey: String?, data: Any?): Intent? {
+//                    return when (screenKey) {
+//                        else -> null
+//                    }
+//                }
+//
+//                override fun createFragment(screenKey: String, data: Any?): Fragment? {
+//                    return when (screenKey) {
+//                        else -> null
+//                    }
+//                }
+//
+//                override fun exit() {
+//                    super.exit()
+//                    activity?.let { (it as RouterProvider).getRouter().exit() }
+//                }
+//            }
+//
+//            navigator as SupportAppNavigator
+//        } else {
+//            navigator!!
+//        }
 
-                override fun createFragment(screenKey: String, data: Any?): Fragment? {
-                    return when (screenKey) {
-                        else -> null
-                    }
-                }
-
-                override fun exit() {
-                    super.exit()
-                    activity?.let { (it as RouterProvider).getRouter().exit() }
-                }
-            }
-
-            navigator as SupportAppNavigator
-        } else {
-            navigator!!
-        }
+        return null
     }
 
     // MARK: - Base implementation
@@ -134,8 +133,8 @@ class PayoutsFragment: BaseContainer(), PayoutsView {
             mAdapter.setList(dataList = data)
         }
 
-        recyclerPayouts.visibility = View.VISIBLE
-        txtPayoutsNoItems.visibility = View.GONE
+//        recyclerPayouts.visibility = View.VISIBLE
+//        txtPayoutsNoItems.visibility = View.GONE
     }
 
     override fun setupBarInfo(paidBTC: Double, usd: Float) {
@@ -144,8 +143,8 @@ class PayoutsFragment: BaseContainer(), PayoutsView {
     }
 
     override fun setupNoItems() {
-        txtPayoutsNoItems.visibility = View.VISIBLE
-        recyclerPayouts.visibility = View.GONE
+//        txtPayoutsNoItems.visibility = View.VISIBLE
+//        recyclerPayouts.visibility = View.GONE
     }
 
     override fun showError(message: String) {
@@ -153,12 +152,12 @@ class PayoutsFragment: BaseContainer(), PayoutsView {
     }
 
     override fun startLoading() {
-        cpvPayouts.visibility = View.VISIBLE
-        recyclerPayouts.visibility = View.GONE
-        txtPayoutsNoItems.visibility = View.GONE
+//        cpvPayouts.visibility = View.VISIBLE
+//        recyclerPayouts.visibility = View.GONE
+//        txtPayoutsNoItems.visibility = View.GONE
     }
 
     override fun endLoading() {
-        cpvPayouts.visibility = View.GONE
+//        cpvPayouts.visibility = View.GONE
     }
 }

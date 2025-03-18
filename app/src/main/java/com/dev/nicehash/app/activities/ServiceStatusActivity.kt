@@ -10,7 +10,6 @@ import com.dev.nicehash.app.views.StatusView
 import com.dev.nicehash.base.BaseActivity
 import com.dev.nicehash.domain.models.Status
 import com.dev.nicehash.helpers.ListConfig
-import kotlinx.android.synthetic.main.activity_service_status.*
 
 /**
  * Created by Alex Gladkov on 24.06.18.
@@ -27,14 +26,14 @@ class ServiceStatusActivity: BaseActivity(), StatusView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_service_status)
 
-        imgServiceBack.setOnClickListener { onBackPressed() }
+//        imgServiceBack.setOnClickListener { onBackPressed() }
 
         val listConfig = ListConfig.Builder(adapter = mAdapter)
                 .setHasFixedSize(isFixedSize = true)
                 .setHasNestedScroll(isNestedScroll = false)
                 .build(context = this@ServiceStatusActivity)
 
-        listConfig.applyConfig(context = this@ServiceStatusActivity, recyclerView = recyclerServiceStatus)
+//        listConfig.applyConfig(context = this@ServiceStatusActivity, recyclerView = recyclerServiceStatus)
 
         statusPresenter.fetchStatuses()
     }

@@ -8,9 +8,9 @@ import com.dev.nicehash.domain.models.Configuration
 import com.dev.nicehash.domain.repositories.ConfigurationRepository
 import com.dev.nicehash.enums.Keys
 import com.dev.nicehash.enums.ScreenKeys
+import com.github.terrakok.cicerone.Router
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import ru.terrakok.cicerone.Router
 
 /**
  * Created by Alex Gladkov on 24.06.18.
@@ -20,16 +20,16 @@ import ru.terrakok.cicerone.Router
 class SettingsPresenter(val router: Router, private val configurationRepository: ConfigurationRepository): MvpPresenter<SettingsView>() {
 
     fun performClick(id: Int) {
-        when (id) {
-            0 -> router.replaceScreen(ScreenKeys.Notifications.value)
-            1 -> router.replaceScreen(ScreenKeys.Themes.value)
-            2 -> router.replaceScreen(ScreenKeys.Tab.value)
-            3 -> router.replaceScreen(ScreenKeys.Language.value)
-            4 -> router.replaceScreen(ScreenKeys.Currencies.value)
-            5 -> router.replaceScreen(ScreenKeys.Service.value)
-            6 -> router.replaceScreen(ScreenKeys.Purchases.value)
-            7 -> router.replaceScreen(ScreenKeys.About.value)
-        }
+//        when (id) {
+//            0 -> router.replaceScreen(ScreenKeys.Notifications.value)
+//            1 -> router.replaceScreen(ScreenKeys.Themes.value)
+//            2 -> router.replaceScreen(ScreenKeys.Tab.value)
+//            3 -> router.replaceScreen(ScreenKeys.Language.value)
+//            4 -> router.replaceScreen(ScreenKeys.Currencies.value)
+//            5 -> router.replaceScreen(ScreenKeys.Service.value)
+//            6 -> router.replaceScreen(ScreenKeys.Purchases.value)
+//            7 -> router.replaceScreen(ScreenKeys.About.value)
+//        }
     }
 
     fun fetchConfiguration() {

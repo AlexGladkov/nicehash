@@ -16,7 +16,6 @@ import com.dev.nicehash.domain.models.Currency
 import com.dev.nicehash.domain.repositories.ConfigurationRepository
 import com.dev.nicehash.helpers.EnumCollections
 import com.dev.nicehash.helpers.ListConfig
-import kotlinx.android.synthetic.main.activity_currencies.*
 import javax.inject.Inject
 
 /**
@@ -40,14 +39,14 @@ class CurrenciesActivity: BaseActivity(), CurrencyView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_currencies)
 
-        imgCurrenciesBack.setOnClickListener { onBackPressed() }
+//        imgCurrenciesBack.setOnClickListener { onBackPressed() }
 
         val listConfig = ListConfig.Builder(adapter = mAdapter)
                 .setHasNestedScroll(isNestedScroll = false)
                 .setHasFixedSize(isFixedSize = true)
                 .build(context = applicationContext)
 
-        listConfig.applyConfig(context = applicationContext, recyclerView = recyclerCurrency)
+//        listConfig.applyConfig(context = applicationContext, recyclerView = recyclerCurrency)
         currencyPresenter.fetchCurrencies()
 
         mAdapter.attachCallback(object: BaseAdapterCallback<Currency> {

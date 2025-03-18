@@ -309,7 +309,7 @@ class ListConfig(adapter: RecyclerView.Adapter<*>?, layoutManagerProvider: Layou
                                     parent: RecyclerView, state: RecyclerView.State) {
 
             // Add top margin only for the first item to avoid double space between
-            if (parent.layoutManager.itemCount == 4) {
+            if (parent.layoutManager?.itemCount == 4) {
                 when (parent.getChildLayoutPosition(view)) {
                     0 -> {
                         outRect.top = 0
@@ -339,7 +339,7 @@ class ListConfig(adapter: RecyclerView.Adapter<*>?, layoutManagerProvider: Layou
                         outRect.bottom = 0
                     }
                 }
-            } else if (parent.layoutManager.itemCount == 3) {
+            } else if (parent.layoutManager?.itemCount == 3) {
                 when (parent.getChildLayoutPosition(view)) {
                     0 -> {
                         outRect.top = 0
@@ -362,7 +362,7 @@ class ListConfig(adapter: RecyclerView.Adapter<*>?, layoutManagerProvider: Layou
                         outRect.bottom = 0
                     }
                 }
-            } else if (parent.layoutManager.itemCount == 2) {
+            } else if (parent.layoutManager?.itemCount == 2) {
                 when (parent.getChildLayoutPosition(view)) {
                     0 -> {
                         outRect.top = 0
@@ -378,7 +378,7 @@ class ListConfig(adapter: RecyclerView.Adapter<*>?, layoutManagerProvider: Layou
                         outRect.bottom = 0
                     }
                 }
-            } else if (parent.layoutManager.itemCount == 3) {
+            } else if (parent.layoutManager?.itemCount == 3) {
                 outRect.top = 0
                 outRect.right = 0
                 outRect.left = 0

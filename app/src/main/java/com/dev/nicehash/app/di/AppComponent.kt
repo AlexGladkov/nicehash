@@ -14,9 +14,11 @@ import javax.inject.Singleton
  * Created by Alex Gladkov on 21.06.18.
  * Dagger app component
  */
-@Component(modules = arrayOf(AppModule::class, RoomModule::class, ProviderModule::class,
-        NavigationModule::class, FirebaseModule::class, RemoteModule::class,
-        LocalNavigationModule::class, RepositoryModule::class, ConverterModule::class))
+@Component(
+    modules = [AppModule::class, RoomModule::class, ProviderModule::class, NavigationModule::class,
+        FirebaseModule::class, RemoteModule::class, LocalNavigationModule::class, RepositoryModule::class,
+        ConverterModule::class]
+)
 @Singleton
 interface AppComponent {
 

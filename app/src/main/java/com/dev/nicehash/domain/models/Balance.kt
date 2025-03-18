@@ -11,12 +11,12 @@ data class Balance(val id: Int, val title: String, var value: Float, val btc: Do
                    var incomeValue: Float, val incomeBtc: Double, val suffix: String): Parcelable {
     constructor(parcel: Parcel) : this(
             parcel.readInt(),
-            parcel.readString(),
+            parcel.readString().orEmpty(),
             parcel.readFloat(),
             parcel.readDouble(),
             parcel.readFloat(),
             parcel.readDouble(),
-            parcel.readString()) {
+            parcel.readString().orEmpty()) {
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {

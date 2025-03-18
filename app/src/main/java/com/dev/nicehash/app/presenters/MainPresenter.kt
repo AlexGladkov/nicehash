@@ -11,11 +11,10 @@ import com.dev.nicehash.domain.repositories.MinerRepository
 import com.dev.nicehash.enums.Keys
 import com.dev.nicehash.enums.ScreenKeys
 import com.github.mikephil.charting.data.Entry
+import com.github.terrakok.cicerone.Router
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import kotlinx.android.synthetic.main.activity_main.*
 import org.joda.time.DateTime
-import ru.terrakok.cicerone.Router
 
 /**
  * Created by Alex Gladkov on 21.06.18.
@@ -32,17 +31,17 @@ class MainPresenter(val router: Router, private val minerRepository: MinerReposi
     }
 
     fun onDeviceClick() {
-        router.replaceScreen(ScreenKeys.Choose.value)
+//        router.replaceScreen(ScreenKeys.Choose.value)
     }
 
     fun onTabClick(position: Int) {
         viewState.setupNavigation(position = position)
-        when (position) {
-            0 -> router.replaceScreen(ScreenKeys.Income.value)
-            1 -> router.replaceScreen(ScreenKeys.Balance.value)
-            2 -> router.replaceScreen(ScreenKeys.Payouts.value)
-            3 -> router.replaceScreen(ScreenKeys.Workers.value)
-        }
+//        when (position) {
+//            0 -> router.replaceScreen(ScreenKeys.Income.value)
+//            1 -> router.replaceScreen(ScreenKeys.Balance.value)
+//            2 -> router.replaceScreen(ScreenKeys.Payouts.value)
+//            3 -> router.replaceScreen(ScreenKeys.Workers.value)
+//        }
     }
 
     fun measureChartHeight(screenHeight: Float, bottomBlockHeight: Float,

@@ -17,15 +17,12 @@ import com.dev.nicehash.domain.models.Configuration
 import com.dev.nicehash.domain.repositories.ConfigurationRepository
 import com.dev.nicehash.enums.ScreenKeys
 import com.dev.nicehash.helpers.EnumCollections
-import kotlinx.android.synthetic.main.activity_settings.*
-import ru.terrakok.cicerone.Navigator
-import ru.terrakok.cicerone.NavigatorHolder
-import ru.terrakok.cicerone.Router
-import ru.terrakok.cicerone.commands.Back
-import ru.terrakok.cicerone.commands.Command
-import ru.terrakok.cicerone.commands.Replace
-import ru.terrakok.cicerone.commands.SystemMessage
-import ru.terrakok.cicerone.result.ResultListener
+import com.github.terrakok.cicerone.Back
+import com.github.terrakok.cicerone.Command
+import com.github.terrakok.cicerone.Navigator
+import com.github.terrakok.cicerone.NavigatorHolder
+import com.github.terrakok.cicerone.Replace
+import com.github.terrakok.cicerone.Router
 import javax.inject.Inject
 
 /**
@@ -49,18 +46,20 @@ class SettingsActivity : BaseActivity(), RouterProvider, SettingsView {
     }
 
     // MARK: - Navigation
-    private val navigator = Navigator { commands ->
-        commands.forEach {
-            applyCommand(it)
+    private val navigator = object : Navigator {
+        override fun applyCommands(commands: Array<out Command>) {
+            commands.forEach {
+                applyCommand(it)
+            }
         }
     }
 
     private fun applyCommand(command: Command) {
         when (command) {
             is Back -> finish()
-            is SystemMessage -> Toast.makeText(applicationContext, command.message, Toast.LENGTH_SHORT).show()
+//            is SystemMessage -> Toast.makeText(applicationContext, command.message, Toast.LENGTH_SHORT).show()
             is Replace -> {
-                when (command.screenKey) {
+                when (command.screen.screenKey) {
                     ScreenKeys.Notifications.value -> {
                         startActivity(Intent(applicationContext, NotificationsActivity::class.java))
                         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
@@ -72,63 +71,63 @@ class SettingsActivity : BaseActivity(), RouterProvider, SettingsView {
                     }
 
                     ScreenKeys.Tab.value -> {
-                        val popupMenu = PopupMenu(applicationContext, txtTabValue)
-                        val menuInflater = popupMenu.menuInflater
-
-                        popupMenu.setOnMenuItemClickListener { menuItem ->
-                            when (menuItem.itemId) {
-                                R.id.default_tab_income -> {
-                                    txtTabValue.text = getString(R.string.settings_income)
-                                    currentConfiguration.defaultTab = 0
-                                }
-                                R.id.default_tab_balance -> {
-                                    txtTabValue.text = getString(R.string.settings_balance)
-                                    currentConfiguration.defaultTab = 1
-                                }
-                                R.id.default_tab_payouts -> {
-                                    txtTabValue.text = getString(R.string.settings_payouts)
-                                    currentConfiguration.defaultTab = 2
-                                }
-                                R.id.default_tab_workers -> {
-                                    txtTabValue.text = getString(R.string.settings_workers)
-                                    currentConfiguration.defaultTab = 3
-                                }
-                            }
-
-                            settingsPresenter.updateConfiguration(configuration = currentConfiguration)
-                            false
-                        }
-
-                        menuInflater.inflate(R.menu.menu_default_tab, popupMenu.menu)
-                        popupMenu.show()
+//                        val popupMenu = PopupMenu(applicationContext, txtTabValue)
+//                        val menuInflater = popupMenu.menuInflater
+//
+//                        popupMenu.setOnMenuItemClickListener { menuItem ->
+//                            when (menuItem.itemId) {
+//                                R.id.default_tab_income -> {
+////                                    txtTabValue.text = getString(R.string.settings_income)
+//                                    currentConfiguration.defaultTab = 0
+//                                }
+//                                R.id.default_tab_balance -> {
+////                                    txtTabValue.text = getString(R.string.settings_balance)
+//                                    currentConfiguration.defaultTab = 1
+//                                }
+//                                R.id.default_tab_payouts -> {
+////                                    txtTabValue.text = getString(R.string.settings_payouts)
+//                                    currentConfiguration.defaultTab = 2
+//                                }
+//                                R.id.default_tab_workers -> {
+////                                    txtTabValue.text = getString(R.string.settings_workers)
+//                                    currentConfiguration.defaultTab = 3
+//                                }
+//                            }
+//
+//                            settingsPresenter.updateConfiguration(configuration = currentConfiguration)
+//                            false
+//                        }
+//
+//                        menuInflater.inflate(R.menu.menu_default_tab, popupMenu.menu)
+//                        popupMenu.show()
                     }
 
                     ScreenKeys.Language.value -> {
-                        val popupMenu = PopupMenu(applicationContext, txtLanguageValue)
-                        val menuInflater = popupMenu.menuInflater
+//                        val popupMenu = PopupMenu(applicationContext, txtLanguageValue)
+//                        val menuInflater = popupMenu.menuInflater
 
-                        popupMenu.setOnMenuItemClickListener { menuItem ->
-                            when (menuItem.itemId) {
-                                R.id.language_english -> {
-                                    txtLanguageValue.text = getString(R.string.settings_language_english)
-                                    currentConfiguration.defaultLanguage = EnumCollections.Language.English
-                                }
-                                R.id.language_chinese -> {
-                                    txtLanguageValue.text = getString(R.string.settings_language_chinese)
-                                    currentConfiguration.defaultLanguage = EnumCollections.Language.Chinese
-                                }
-                                R.id.language_russian -> {
-                                    txtLanguageValue.text = getString(R.string.settings_language_russian)
-                                    currentConfiguration.defaultLanguage = EnumCollections.Language.Russian
-                                }
-                            }
-
-                            settingsPresenter.updateConfiguration(configuration = currentConfiguration)
-                            false
-                        }
-
-                        menuInflater.inflate(R.menu.menu_language, popupMenu.menu)
-                        popupMenu.show()
+//                        popupMenu.setOnMenuItemClickListener { menuItem ->
+//                            when (menuItem.itemId) {
+//                                R.id.language_english -> {
+////                                    txtLanguageValue.text = getString(R.string.settings_language_english)
+//                                    currentConfiguration.defaultLanguage = EnumCollections.Language.English
+//                                }
+//                                R.id.language_chinese -> {
+////                                    txtLanguageValue.text = getString(R.string.settings_language_chinese)
+//                                    currentConfiguration.defaultLanguage = EnumCollections.Language.Chinese
+//                                }
+//                                R.id.language_russian -> {
+////                                    txtLanguageValue.text = getString(R.string.settings_language_russian)
+//                                    currentConfiguration.defaultLanguage = EnumCollections.Language.Russian
+//                                }
+//                            }
+//
+//                            settingsPresenter.updateConfiguration(configuration = currentConfiguration)
+//                            false
+//                        }
+//
+//                        menuInflater.inflate(R.menu.menu_language, popupMenu.menu)
+//                        popupMenu.show()
                     }
 
                     ScreenKeys.Currencies.value -> {
@@ -160,16 +159,16 @@ class SettingsActivity : BaseActivity(), RouterProvider, SettingsView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 
-        imgSettingsBack.setOnClickListener { settingsPresenter.onBackClick() }
-
-        btnSettingsNotifications.setOnClickListener { settingsPresenter.performClick(id = 0) }
-        btnSettingsThemes.setOnClickListener { settingsPresenter.performClick(id = 1) }
-        btnSettingsDefaultTab.setOnClickListener { settingsPresenter.performClick(id = 2) }
-        btnSettingsLanguage.setOnClickListener { settingsPresenter.performClick(id = 3) }
-        btnSettingsCurrencies.setOnClickListener { settingsPresenter.performClick(id = 4) }
-        btnSettingsService.setOnClickListener { settingsPresenter.performClick(id = 5) }
-        btnSettingsPurchases.setOnClickListener { settingsPresenter.performClick(id = 6) }
-        btnSettingsAbout.setOnClickListener { settingsPresenter.performClick(id = 7) }
+//        imgSettingsBack.setOnClickListener { settingsPresenter.onBackClick() }
+//
+//        btnSettingsNotifications.setOnClickListener { settingsPresenter.performClick(id = 0) }
+//        btnSettingsThemes.setOnClickListener { settingsPresenter.performClick(id = 1) }
+//        btnSettingsDefaultTab.setOnClickListener { settingsPresenter.performClick(id = 2) }
+//        btnSettingsLanguage.setOnClickListener { settingsPresenter.performClick(id = 3) }
+//        btnSettingsCurrencies.setOnClickListener { settingsPresenter.performClick(id = 4) }
+//        btnSettingsService.setOnClickListener { settingsPresenter.performClick(id = 5) }
+//        btnSettingsPurchases.setOnClickListener { settingsPresenter.performClick(id = 6) }
+//        btnSettingsAbout.setOnClickListener { settingsPresenter.performClick(id = 7) }
     }
 
     override fun onResume() {
@@ -203,13 +202,13 @@ class SettingsActivity : BaseActivity(), RouterProvider, SettingsView {
     private var currentConfiguration = Configuration.defaultInstance()
     override fun setupConfiguration(configuration: Configuration) {
         this.currentConfiguration = configuration
-        txtTabValue.text = when (configuration.defaultTab) {
-            1 -> getString(R.string.settings_balance)
-            2 -> getString(R.string.settings_payouts)
-            3 -> getString(R.string.settings_workers)
-            else -> getString(R.string.settings_income)
-        }
+//        txtTabValue.text = when (configuration.defaultTab) {
+//            1 -> getString(R.string.settings_balance)
+//            2 -> getString(R.string.settings_payouts)
+//            3 -> getString(R.string.settings_workers)
+//            else -> getString(R.string.settings_income)
+//        }
 
-        txtLanguageValue.text = getString(configuration.defaultLanguage.title)
+//        txtLanguageValue.text = getString(configuration.defaultLanguage.title)
     }
 }

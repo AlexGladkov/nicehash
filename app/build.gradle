@@ -1,24 +1,42 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-kapt'
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
 
 android {
-    compileSdkVersion 27
+    namespace "com.dev.nicehash" // Укажи свой package name
+    compileSdkVersion 35
     defaultConfig {
         applicationId "com.dev.nicehash"
         minSdkVersion 21
-        targetSdkVersion 27
+        targetSdkVersion 33
         versionCode 4
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    kapt { correctErrorTypes = true }
 
     /**
      * if you mix Java and Kotlin files is a good practice created the kotlin directory
@@ -32,14 +50,13 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support:recyclerview-v7:27.1.1'
-    implementation "com.android.support:design:27.1.1"
-    implementation "com.android.support:exifinterface:27.1.1"
-    implementation "com.android.support:support-vector-drawable:27.1.1"
-    implementation "com.android.support:animated-vector-drawable:27.1.1"
+    def appCompat = '28.0.0'
+    implementation "com.android.support:appcompat-v7:$appCompat"
+    implementation "com.android.support:recyclerview-v7:$appCompat"
+    implementation "com.android.support:design:$appCompat"
+    implementation "com.android.support:exifinterface:$appCompat"
+    implementation "com.android.support:support-vector-drawable:$appCompat"
+    implementation "com.android.support:animated-vector-drawable:$appCompat"
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
 
     // UI Part
@@ -62,17 +79,18 @@ dependencies {
 //    implementation 'com.google.firebase:firebase-invites:16.0.0'
 
     // Navigation part
-    implementation 'ru.terrakok.cicerone:cicerone:3.0.0'
+    implementation 'com.github.terrakok:cicerone:7.1'
 
     // Dagger library
-    String daggerVersion = '2.13'
+    String daggerVersion = '2.51'
     implementation "com.google.dagger:dagger:$daggerVersion"
     kapt "com.google.dagger:dagger-compiler:$daggerVersion"
 
     // Storage
-    implementation "android.arch.persistence.room:runtime:1.0.0"
-    kapt "android.arch.persistence.room:compiler:1.0.0"
-    implementation "android.arch.persistence.room:rxjava2:1.0.0"
+    def room_version = "2.5.2"
+    implementation("androidx.room:room-runtime:$room_version")
+    implementation("androidx.room:room-rxjava2:$room_version")
+    kapt("androidx.room:room-compiler:$room_version")
 
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'

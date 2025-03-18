@@ -8,9 +8,9 @@ import com.dev.nicehash.app.interfaces.BackButtonListener
 import com.dev.nicehash.app.interfaces.RouterProvider
 import com.dev.nicehash.app.navigation.LocalCiceroneHolder
 import com.dev.nicehash.enums.Keys
-import ru.terrakok.cicerone.Cicerone
-import ru.terrakok.cicerone.Navigator
-import ru.terrakok.cicerone.Router
+import com.github.terrakok.cicerone.Cicerone
+import com.github.terrakok.cicerone.Navigator
+import com.github.terrakok.cicerone.Router
 import javax.inject.Inject
 
 /**
@@ -34,11 +34,11 @@ abstract class BaseContainer: MvpAppCompatFragment(), RouterProvider, BackButton
 
     override fun onResume() {
         super.onResume()
-        getCicerone().navigatorHolder.setNavigator(getNavigator())
+//        getCicerone().navigatorHolder.setNavigator(getNavigator())
     }
 
     override fun onPause() {
-        getCicerone().navigatorHolder.removeNavigator()
+//        getCicerone().navigatorHolder.removeNavigator()
         super.onPause()
     }
 

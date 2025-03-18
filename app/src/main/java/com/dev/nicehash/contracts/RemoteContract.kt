@@ -7,7 +7,7 @@ package com.dev.nicehash.contracts
 class RemoteContract {
 
     companion object {
-        val baseUrl = "https://api.nicehash.com/"
+        val baseUrl = "https://api2.nicehash.com/main/api/v2/"
 
         const val METHOD = "method"
         const val MINER = "addr"

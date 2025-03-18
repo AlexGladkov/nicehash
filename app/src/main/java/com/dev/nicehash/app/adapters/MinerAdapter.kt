@@ -14,7 +14,6 @@ import com.dev.nicehash.app.App
 import com.dev.nicehash.base.BaseAdapter
 import com.dev.nicehash.base.BaseViewHolder
 import com.dev.nicehash.domain.models.Miner
-import kotlinx.android.synthetic.main.activity_settings.*
 
 /**
  * Created by Alex Gladkov on 23.06.18.

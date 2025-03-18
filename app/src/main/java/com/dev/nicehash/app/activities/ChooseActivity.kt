@@ -28,14 +28,12 @@ import com.dev.nicehash.enums.ScreenKeys
 import com.dev.nicehash.enums.Theme
 import com.dev.nicehash.helpers.EnumCollections
 import com.dev.nicehash.helpers.ListConfig
-import kotlinx.android.synthetic.main.activity_choose.*
-import ru.terrakok.cicerone.Navigator
-import ru.terrakok.cicerone.NavigatorHolder
-import ru.terrakok.cicerone.Router
-import ru.terrakok.cicerone.commands.Back
-import ru.terrakok.cicerone.commands.Command
-import ru.terrakok.cicerone.commands.Replace
-import ru.terrakok.cicerone.commands.SystemMessage
+import com.github.terrakok.cicerone.Back
+import com.github.terrakok.cicerone.Command
+import com.github.terrakok.cicerone.Navigator
+import com.github.terrakok.cicerone.NavigatorHolder
+import com.github.terrakok.cicerone.Replace
+import com.github.terrakok.cicerone.Router
 import javax.inject.Inject
 
 /**
@@ -70,18 +68,20 @@ class ChooseActivity: MvpAppCompatActivity(), RouterProvider, ChooseView {
     })
 
     // MARK: - Navigation
-    private val navigator = Navigator { commands ->
-        commands.forEach {
-            applyCommand(it)
+    private val navigator = object : Navigator {
+        override fun applyCommands(commands: Array<out Command>) {
+            commands.forEach {
+                applyCommand(it)
+            }
         }
     }
 
     private fun applyCommand(command: Command) {
         when (command) {
             is Back -> finish()
-            is SystemMessage -> Toast.makeText(applicationContext, command.message, Toast.LENGTH_SHORT).show()
+//            is SystemMessage -> Toast.makeText(applicationContext, command.message, Toast.LENGTH_SHORT).show()
             is Replace -> {
-                when (command.screenKey) {
+                when (command.screen.screenKey) {
                     ScreenKeys.Settings.value -> {
                         val settingsIntent = Intent(applicationContext, SettingsActivity::class.java)
                         settingsIntent.putExtra(Keys.Configuration.name, currentConfiguration)
@@ -100,11 +100,11 @@ class ChooseActivity: MvpAppCompatActivity(), RouterProvider, ChooseView {
                     }
 
                     ScreenKeys.Edit.value -> {
-                        (command.transitionData as? Bundle)?.let {
-                            val editIntent = Intent(applicationContext, AddActivity::class.java)
-                            editIntent.putExtra(Keys.Miner.value, it)
-                            startActivity(editIntent)
-                        }
+//                        (command.transitionData as? Bundle)?.let {
+//                            val editIntent = Intent(applicationContext, AddActivity::class.java)
+//                            editIntent.putExtra(Keys.Miner.value, it)
+//                            startActivity(editIntent)
+//                        }
                     }
                 }
             }
@@ -140,47 +140,47 @@ class ChooseActivity: MvpAppCompatActivity(), RouterProvider, ChooseView {
 
         when (App.theme) {
             Theme.DarkGreen -> {
-                tbChoose.background = ContextCompat.getDrawable(applicationContext, R.color.dark_background_primary)
-                btnChooseSettings.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
-                imgChooseAdd.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
+//                tbChoose.background = ContextCompat.getDrawable(applicationContext, R.color.dark_background_primary)
+//                btnChooseSettings.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
+//                imgChooseAdd.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
             }
             Theme.DarkOrange -> {
-                tbChoose.background = ContextCompat.getDrawable(applicationContext, R.color.dark_background_primary)
-                btnChooseSettings.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
-                imgChooseAdd.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
+//                tbChoose.background = ContextCompat.getDrawable(applicationContext, R.color.dark_background_primary)
+//                btnChooseSettings.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
+//                imgChooseAdd.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
             }
             Theme.DarkRed -> {
-                tbChoose.background = ContextCompat.getDrawable(applicationContext, R.color.dark_background_primary)
-                btnChooseSettings.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
-                imgChooseAdd.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
+//                tbChoose.background = ContextCompat.getDrawable(applicationContext, R.color.dark_background_primary)
+//                btnChooseSettings.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
+//                imgChooseAdd.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
             }
             Theme.DarkPurple -> {
-                tbChoose.background = ContextCompat.getDrawable(applicationContext, R.color.dark_background_primary)
-                btnChooseSettings.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
-                imgChooseAdd.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
+//                tbChoose.background = ContextCompat.getDrawable(applicationContext, R.color.dark_background_primary)
+//                btnChooseSettings.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
+//                imgChooseAdd.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
             }
             Theme.DarkBlue -> {
-                tbChoose.background = ContextCompat.getDrawable(applicationContext, R.color.dark_background_primary)
-                btnChooseSettings.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
-                imgChooseAdd.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
+//                tbChoose.background = ContextCompat.getDrawable(applicationContext, R.color.dark_background_primary)
+//                btnChooseSettings.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
+//                imgChooseAdd.setColorFilter(ContextCompat.getColor(applicationContext, R.color.dark_tint_color))
             }
             else -> {
-                tbChoose.background = ContextCompat.getDrawable(applicationContext, R.color.light_background_primary)
-                btnChooseSettings.setColorFilter(ContextCompat.getColor(applicationContext, R.color.light_tint_color))
-                imgChooseAdd.setColorFilter(ContextCompat.getColor(applicationContext, R.color.light_tint_color))
+//                tbChoose.background = ContextCompat.getDrawable(applicationContext, R.color.light_background_primary)
+//                btnChooseSettings.setColorFilter(ContextCompat.getColor(applicationContext, R.color.light_tint_color))
+//                imgChooseAdd.setColorFilter(ContextCompat.getColor(applicationContext, R.color.light_tint_color))
             }
         }
 
-        flChoose.setOnClickListener { onBackPressed() }
-        imgChooseAdd.setOnClickListener { choosePresenter.onAddClick() }
-
-        val listConfig = ListConfig.Builder(mAdapter)
-                .setHasFixedSize(true)
-                .setHasNestedScroll(false)
-                .build(applicationContext)
-        listConfig.applyConfig(applicationContext, recyclerMiners)
-
-        btnChooseSettings.setOnClickListener { choosePresenter.onGearClick() }
+//        flChoose.setOnClickListener { onBackPressed() }
+//        imgChooseAdd.setOnClickListener { choosePresenter.onAddClick() }
+//
+//        val listConfig = ListConfig.Builder(mAdapter)
+//                .setHasFixedSize(true)
+//                .setHasNestedScroll(false)
+//                .build(applicationContext)
+//        listConfig.applyConfig(applicationContext, recyclerMiners)
+//
+//        btnChooseSettings.setOnClickListener { choosePresenter.onGearClick() }
     }
 
     override fun onBackPressed() {

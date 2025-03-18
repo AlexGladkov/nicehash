@@ -11,8 +11,8 @@ data class Miner(val id: Int, val name: String, var hash: String, var isSelected
 
     constructor(parcel: Parcel) : this(
             parcel.readInt(),
-            parcel.readString(),
-            parcel.readString(),
+            parcel.readString().orEmpty(),
+            parcel.readString().orEmpty(),
             parcel.readByte() != 0.toByte()) {
     }
 

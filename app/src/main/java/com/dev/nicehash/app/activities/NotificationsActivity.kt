@@ -11,7 +11,6 @@ import com.dev.nicehash.domain.models.Configuration
 import com.dev.nicehash.domain.repositories.ConfigurationRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import kotlinx.android.synthetic.main.activity_notifications.*
 import javax.inject.Inject
 
 /**
@@ -31,7 +30,7 @@ class NotificationsActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notifications)
 
-        imgNotificationsBack.setOnClickListener { onBackPressed() }
+//        imgNotificationsBack.setOnClickListener { onBackPressed() }
 
         configurationRepository.fetchConfiguration()
                 .subscribeOn(Schedulers.newThread())
@@ -74,36 +73,36 @@ class NotificationsActivity : BaseActivity() {
     private fun setupConfiguration(configuration: Configuration) {
         this.configuration = configuration
         Log.e(TAG, "configuration bottom ${configuration.isBottom}")
-        swNotificationsPayments.isChecked = configuration.isPayments
-        swNotificationsMaintenance.isChecked = configuration.isMaintenance
-
-        swNotificationsTop.isChecked = configuration.isTop
-        swNotificationsBottom.isChecked = configuration.isBottom
-        swNotificationsStrix.isChecked = configuration.isStrix
-
-        swNotificationsSound.isChecked = configuration.isSound
-        swNotificationsVibro.isChecked = configuration.isVibro
-
-        swNotificationsPayments.setOnCheckedChangeListener { _, isChecked ->
-            onChangeClick(position = 0, isChecked = isChecked)
-        }
-        swNotificationsMaintenance.setOnCheckedChangeListener { _, isChecked ->
-            onChangeClick(position = 1, isChecked = isChecked)
-        }
-        swNotificationsTop.setOnCheckedChangeListener { _, isChecked ->
-            onChangeClick(position = 2, isChecked = isChecked)
-        }
-        swNotificationsBottom.setOnCheckedChangeListener { _, isChecked ->
-            onChangeClick(position = 3, isChecked = isChecked)
-        }
-        swNotificationsStrix.setOnCheckedChangeListener { _, isChecked ->
-            onChangeClick(position = 4, isChecked = isChecked)
-        }
-        swNotificationsSound.setOnCheckedChangeListener { _, isChecked ->
-            onChangeClick(position = 5, isChecked = isChecked)
-        }
-        swNotificationsVibro.setOnCheckedChangeListener { _, isChecked ->
-            onChangeClick(position = 6, isChecked = isChecked)
-        }
+//        swNotificationsPayments.isChecked = configuration.isPayments
+//        swNotificationsMaintenance.isChecked = configuration.isMaintenance
+//
+//        swNotificationsTop.isChecked = configuration.isTop
+//        swNotificationsBottom.isChecked = configuration.isBottom
+//        swNotificationsStrix.isChecked = configuration.isStrix
+//
+//        swNotificationsSound.isChecked = configuration.isSound
+//        swNotificationsVibro.isChecked = configuration.isVibro
+//
+//        swNotificationsPayments.setOnCheckedChangeListener { _, isChecked ->
+//            onChangeClick(position = 0, isChecked = isChecked)
+//        }
+//        swNotificationsMaintenance.setOnCheckedChangeListener { _, isChecked ->
+//            onChangeClick(position = 1, isChecked = isChecked)
+//        }
+//        swNotificationsTop.setOnCheckedChangeListener { _, isChecked ->
+//            onChangeClick(position = 2, isChecked = isChecked)
+//        }
+//        swNotificationsBottom.setOnCheckedChangeListener { _, isChecked ->
+//            onChangeClick(position = 3, isChecked = isChecked)
+//        }
+//        swNotificationsStrix.setOnCheckedChangeListener { _, isChecked ->
+//            onChangeClick(position = 4, isChecked = isChecked)
+//        }
+//        swNotificationsSound.setOnCheckedChangeListener { _, isChecked ->
+//            onChangeClick(position = 5, isChecked = isChecked)
+//        }
+//        swNotificationsVibro.setOnCheckedChangeListener { _, isChecked ->
+//            onChangeClick(position = 6, isChecked = isChecked)
+//        }
     }
 }

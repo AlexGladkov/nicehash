@@ -25,6 +25,7 @@ import com.dev.nicehash.app.servers.ExchangeServer
 import com.dev.nicehash.app.servers.ExchangeServerImpl
 import com.dev.nicehash.app.views.MainView
 import com.dev.nicehash.base.BaseActivity
+import com.dev.nicehash.databinding.ActivityMainBinding
 import com.dev.nicehash.domain.models.Balance
 import com.dev.nicehash.domain.models.Configuration
 import com.dev.nicehash.domain.repositories.MinerRepository
@@ -41,17 +42,15 @@ import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.formatter.IAxisValueFormatter
+import com.github.terrakok.cicerone.Back
+import com.github.terrakok.cicerone.Command
+import com.github.terrakok.cicerone.Navigator
+import com.github.terrakok.cicerone.NavigatorHolder
+import com.github.terrakok.cicerone.Replace
+import com.github.terrakok.cicerone.Router
 import com.ogaclejapan.smarttablayout.SmartTabLayout
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems
-import kotlinx.android.synthetic.main.activity_main.*
-import ru.terrakok.cicerone.Navigator
-import ru.terrakok.cicerone.NavigatorHolder
-import ru.terrakok.cicerone.Router
-import ru.terrakok.cicerone.commands.Back
-import ru.terrakok.cicerone.commands.Command
-import ru.terrakok.cicerone.commands.Replace
-import ru.terrakok.cicerone.commands.SystemMessage
 import java.text.DecimalFormat
 import javax.inject.Inject
 
@@ -66,6 +65,8 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
 
     // MARK: - Presenter setup
     @InjectPresenter lateinit var mainPresenter: MainPresenter
+
+    private lateinit var binding: ActivityMainBinding
 
     // MARK: - Fragments setup
     private var incomeFragment: IncomeFragment? = null
@@ -82,18 +83,20 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
     }
 
     // MARK: - Navigation
-    private val navigator = Navigator { commands ->
-        commands.forEach {
-            applyCommand(it)
+    private val navigator = object : Navigator {
+        override fun applyCommands(commands: Array<out Command>) {
+            commands.forEach {
+                applyCommand(it)
+            }
         }
     }
 
     private fun applyCommand(command: Command) {
         when (command) {
             is Back -> finish()
-            is SystemMessage -> Toast.makeText(applicationContext, command.message, Toast.LENGTH_SHORT).show()
+//            is SystemMessage -> Toast.makeText(applicationContext, command.message, Toast.LENGTH_SHORT).show()
             is Replace -> {
-                when (command.screenKey) {
+                when (command.screen.screenKey) {
                     ScreenKeys.Choose.value -> {
                         val chooseIntent = Intent(applicationContext, ChooseActivity::class.java)
                         chooseIntent.putExtra(Keys.Configuration.value, currentConfiguration)
@@ -102,49 +105,49 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
                     }
 
                     ScreenKeys.Detail.value -> {
-                        val balance = (command.transitionData as? Balance)
-                        balance.let {
-                            val detailIntent = Intent(applicationContext, DetailActivity::class.java)
-                            detailIntent.putExtra(Keys.Balance.value, it)
-                            startActivity(detailIntent)
-                            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
-                        }
+//                        val balance = (command.transitionData as? Balance)
+//                        balance.let {
+//                            val detailIntent = Intent(applicationContext, DetailActivity::class.java)
+//                            detailIntent.putExtra(Keys.Balance.value, it)
+//                            startActivity(detailIntent)
+//                            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+//                        }
                     }
 
                     ScreenKeys.Income.value -> {
-                        supportFragmentManager.beginTransaction()
-                                .detach(balanceFragment)
-                                .detach(payoutsFragment)
-                                .detach(workersFragment)
-                                .attach(incomeFragment)
-                                .commitNow()
+//                        supportFragmentManager.beginTransaction()
+//                                .detach(balanceFragment)
+//                                .detach(payoutsFragment)
+//                                .detach(workersFragment)
+//                                .attach(incomeFragment)
+//                                .commitNow()
                     }
 
                     ScreenKeys.Balance.value -> {
-                        supportFragmentManager.beginTransaction()
-                                .detach(incomeFragment)
-                                .detach(payoutsFragment)
-                                .detach(workersFragment)
-                                .attach(balanceFragment)
-                                .commitNow()
+//                        supportFragmentManager.beginTransaction()
+//                                .detach(incomeFragment)
+//                                .detach(payoutsFragment)
+//                                .detach(workersFragment)
+//                                .attach(balanceFragment)
+//                                .commitNow()
                     }
 
                     ScreenKeys.Payouts.value -> {
-                        supportFragmentManager.beginTransaction()
-                                .detach(balanceFragment)
-                                .detach(incomeFragment)
-                                .detach(workersFragment)
-                                .attach(payoutsFragment)
-                                .commitNow()
+//                        supportFragmentManager.beginTransaction()
+//                                .detach(balanceFragment)
+//                                .detach(incomeFragment)
+//                                .detach(workersFragment)
+//                                .attach(payoutsFragment)
+//                                .commitNow()
                     }
 
                     ScreenKeys.Workers.value -> {
-                        supportFragmentManager.beginTransaction()
-                                .detach(balanceFragment)
-                                .detach(payoutsFragment)
-                                .detach(incomeFragment)
-                                .attach(workersFragment)
-                                .commitNow()
+//                        supportFragmentManager.beginTransaction()
+//                                .detach(balanceFragment)
+//                                .detach(payoutsFragment)
+//                                .detach(incomeFragment)
+//                                .attach(workersFragment)
+//                                .commitNow()
                     }
                 }
             }
@@ -155,40 +158,41 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
     override fun onCreate(savedInstanceState: Bundle?) {
         App.appComponent.inject(activity = this@MainActivity)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         mainPresenter.handleConfiguration(extras = intent?.extras)
 
-        imgMainDevice.setOnClickListener {
+        binding.imgMainDevice.setOnClickListener {
             mainPresenter.onDeviceClick()
         }
 
         initFragments()
         tuneChart()
 
-        nsvMain.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { _, _, scrollY, _, _ ->
+        binding.nsvMain.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { _, _, scrollY, _, _ ->
             mainPresenter.handleScrolling(scrollY = scrollY, daysBarHeight =
             WindowUtils.convertDpToPixel(dp = SizeContract.daysBarHeight, context = applicationContext),
                     introBarHeight = WindowUtils.convertDpToPixel(dp = SizeContract.introBarHeight,
                             context = applicationContext))
         })
 
-        txtMainTitle.text = intent?.extras?.getString(Keys.MinerTitle.value).orEmpty()
-        flMainOneHour.setOnClickListener { mainPresenter.onChartTimeClick(position = 0,
+        binding.txtMainTitle.text = intent?.extras?.getString(Keys.MinerTitle.value).orEmpty()
+        binding.flMainOneHour.setOnClickListener { mainPresenter.onChartTimeClick(position = 0,
                 miner = intent?.extras?.getString(Keys.Miner.value).orEmpty(),
                 id = intent?.extras?.getInt(Keys.MinerID.value) ?: - 1) }
-        flMainSixHours.setOnClickListener { mainPresenter.onChartTimeClick(position = 1,
+        binding.flMainSixHours.setOnClickListener { mainPresenter.onChartTimeClick(position = 1,
                 miner = intent?.extras?.getString(Keys.Miner.value).orEmpty(),
                 id = intent?.extras?.getInt(Keys.MinerID.value) ?: - 1) }
-        flMainTwelveHours.setOnClickListener { mainPresenter.onChartTimeClick(position = 2,
+        binding.flMainTwelveHours.setOnClickListener { mainPresenter.onChartTimeClick(position = 2,
                 miner = intent?.extras?.getString(Keys.Miner.value).orEmpty(),
                 id = intent?.extras?.getInt(Keys.MinerID.value) ?: - 1) }
-        flMainOneDay.setOnClickListener { mainPresenter.onChartTimeClick(position = 3,
+        binding.flMainOneDay.setOnClickListener { mainPresenter.onChartTimeClick(position = 3,
                 miner = intent?.extras?.getString(Keys.Miner.value).orEmpty(),
                 id = intent?.extras?.getInt(Keys.MinerID.value) ?: - 1) }
-        flMainThreeDays.setOnClickListener { mainPresenter.onChartTimeClick(position = 4,
+        binding.flMainThreeDays.setOnClickListener { mainPresenter.onChartTimeClick(position = 4,
                 miner = intent?.extras?.getString(Keys.Miner.value).orEmpty(),
                 id = intent?.extras?.getInt(Keys.MinerID.value) ?: - 1) }
-        flMainAll.setOnClickListener { mainPresenter.onChartTimeClick(position = 5,
+        binding.flMainAll.setOnClickListener { mainPresenter.onChartTimeClick(position = 5,
                 miner = intent?.extras?.getString(Keys.Miner.value).orEmpty(),
                 id = intent?.extras?.getInt(Keys.MinerID.value) ?: - 1) }
 
@@ -200,14 +204,14 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
                 .add("", DummyFragment::class.java)
                 .create())
 
-        stbMain.setCustomTabView(this)
-        vpMain.adapter = adapter
-        stbMain.setViewPager(vpMain)
-        stbMain.setOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
+        binding.stbMain.setCustomTabView(this)
+        binding.vpMain.adapter = adapter
+        binding.stbMain.setViewPager(binding.vpMain)
+        binding.stbMain.setOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
-                val oldTab = stbMain.getTabAt(currentPosition)
-                val currentTab = stbMain.getTabAt(position)
+                val oldTab = binding.stbMain.getTabAt(currentPosition)
+                val currentTab = binding.stbMain.getTabAt(position)
 
                 val oldView = oldTab.findViewById<View>(R.id.tab_layout) as RelativeLayout
                 val currentView = currentTab.findViewById<View>(R.id.tab_layout) as RelativeLayout
@@ -248,13 +252,13 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
     }
 
     private fun tuneChart() {
-        chartMain.fitScreen()
-        chartMain.description.isEnabled = false
-        chartMain.legend.isEnabled = false
-        chartMain.setViewPortOffsets(0f, 0f, 0f, 0f)
-        chartMain.isDoubleTapToZoomEnabled = false
+        binding.chartMain.fitScreen()
+        binding.chartMain.description.isEnabled = false
+        binding.chartMain.legend.isEnabled = false
+        binding.chartMain.setViewPortOffsets(0f, 0f, 0f, 0f)
+        binding.chartMain.isDoubleTapToZoomEnabled = false
 
-        val xAxis = chartMain.xAxis
+        val xAxis = binding.chartMain.xAxis
         xAxis.setDrawLimitLinesBehindData(true)
         xAxis.position = XAxis.XAxisPosition.BOTTOM
         xAxis.textColor = Color.WHITE
@@ -271,37 +275,37 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
                 WindowUtils.convertDpToPixel(2f, applicationContext), 2f)
         averageLine.lineWidth = 2f
 
-        chartMain.axisRight.isEnabled = false
-        chartMain.axisRight.spaceBottom = 0f
-        chartMain.xAxis.isEnabled = false
+        binding.chartMain.axisRight.isEnabled = false
+        binding.chartMain.axisRight.spaceBottom = 0f
+        binding.chartMain.xAxis.isEnabled = false
 
-        chartMain.axisLeft.isEnabled = true
-        chartMain.axisLeft.addLimitLine(averageLine)
-        chartMain.axisLeft.setLabelCount(9, true)
-        chartMain.axisLeft.setPosition(YAxis.YAxisLabelPosition.INSIDE_CHART)
-        chartMain.axisLeft.gridColor = if (App.isDark) {
+        binding.chartMain.axisLeft.isEnabled = true
+        binding.chartMain.axisLeft.addLimitLine(averageLine)
+        binding.chartMain.axisLeft.setLabelCount(9, true)
+        binding.chartMain.axisLeft.setPosition(YAxis.YAxisLabelPosition.INSIDE_CHART)
+        binding.chartMain.axisLeft.gridColor = if (App.isDark) {
             Color.parseColor("#1AFFFFFF")
         } else {
             Color.parseColor("#0D000000")
         }
-        chartMain.axisLeft.gridLineWidth = 0.5f
-        chartMain.axisLeft.textSize = 10f
-        chartMain.axisLeft.setDrawTopYLabelEntry(false)
-        chartMain.axisLeft.setDrawZeroLine(false)
-        chartMain.axisLeft.valueFormatter = IAxisValueFormatter { value, _ ->
+        binding.chartMain.axisLeft.gridLineWidth = 0.5f
+        binding.chartMain.axisLeft.textSize = 10f
+        binding.chartMain.axisLeft.setDrawTopYLabelEntry(false)
+        binding.chartMain.axisLeft.setDrawZeroLine(false)
+        binding.chartMain.axisLeft.valueFormatter = IAxisValueFormatter { value, _ ->
             if (value < 0.0000001f) {
                 return@IAxisValueFormatter ""
             }
 
             String.format("%.05f", value)
         }
-        chartMain.axisLeft.axisLineColor = ContextCompat.getColor(applicationContext, if (App.isDark) {
+        binding.chartMain.axisLeft.axisLineColor = ContextCompat.getColor(applicationContext, if (App.isDark) {
             R.color.dark_background_secondary
         } else {
             R.color.light_background_secondary
         })
 
-        chartMain.axisLeft.textColor = ContextCompat.getColor(applicationContext, if (App.isDark) {
+        binding.chartMain.axisLeft.textColor = ContextCompat.getColor(applicationContext, if (App.isDark) {
             R.color.dark_text_color_primary
         } else {
             R.color.light_text_color_primary
@@ -315,8 +319,8 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
                     miner = intent?.extras?.getString(Keys.Miner.value).orEmpty(),
                     minerID = intent?.extras?.getInt(Keys.MinerID.value) ?: -1)
             supportFragmentManager.beginTransaction()
-                    .add(R.id.flMain, incomeFragment, ScreenKeys.Income.value)
-                    .detach(incomeFragment)
+                    .add(R.id.flMain, incomeFragment!!, ScreenKeys.Income.value)
+                    .detach(incomeFragment!!)
                     .commitNow()
         }
 
@@ -326,8 +330,8 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
                     miner = intent?.extras?.getString(Keys.Miner.value).orEmpty(),
                     minerID = intent?.extras?.getInt(Keys.MinerID.value) ?: -1)
             supportFragmentManager.beginTransaction()
-                    .add(R.id.flMain, balanceFragment, ScreenKeys.Balance.value)
-                    .detach(balanceFragment)
+                    .add(R.id.flMain, balanceFragment!!, ScreenKeys.Balance.value)
+                    .detach(balanceFragment!!)
                     .commitNow()
         }
 
@@ -337,8 +341,8 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
                     miner = intent?.extras?.getString(Keys.Miner.value).orEmpty(),
                     minerID = intent?.extras?.getInt(Keys.MinerID.value) ?: -1)
             supportFragmentManager.beginTransaction()
-                    .add(R.id.flMain, payoutsFragment, ScreenKeys.Payouts.value)
-                    .detach(payoutsFragment)
+                    .add(R.id.flMain, payoutsFragment!!, ScreenKeys.Payouts.value)
+                    .detach(payoutsFragment!!)
                     .commitNow()
         }
 
@@ -348,8 +352,8 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
                     miner = intent?.extras?.getString(Keys.Miner.value).orEmpty(),
                     minerID = intent?.extras?.getInt(Keys.MinerID.value) ?: - 1)
             supportFragmentManager.beginTransaction()
-                    .add(R.id.flMain, workersFragment, ScreenKeys.Workers.value)
-                    .detach(workersFragment)
+                    .add(R.id.flMain, workersFragment!!, ScreenKeys.Workers.value)
+                    .detach(workersFragment!!)
                     .commitNow()
         }
     }
@@ -415,34 +419,34 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
 
     // MARK: - View implementation
     override fun displayNavigationInfo(leftValue: String, rightValue: String) {
-        txtMainNavLeftTitle.text = leftValue
-        txtMainNavRightTitle.text = rightValue
+        binding.txtMainNavLeftTitle.text = leftValue
+        binding.txtMainNavRightTitle.text = rightValue
     }
 
     override fun setupNavigation(position: Int) {
         when (position) {
             0 -> {
-                txtMainNavLeftSubtitle.text = getString(R.string.navigation_bar_income_left)
-                txtMainNavRightSubtitle.text = "RUB/Day"
+                binding.txtMainNavLeftSubtitle.text = getString(R.string.navigation_bar_income_left)
+                binding.txtMainNavRightSubtitle.text = "RUB/Day"
             }
             1 -> {
-                txtMainNavLeftSubtitle.text = getString(R.string.navigation_bar_balance_left)
-                txtMainNavRightSubtitle.text = getString(R.string.navigation_bar_balance_right)
+                binding.txtMainNavLeftSubtitle.text = getString(R.string.navigation_bar_balance_left)
+                binding.txtMainNavRightSubtitle.text = getString(R.string.navigation_bar_balance_right)
             }
             2 -> {
-                txtMainNavLeftSubtitle.text = getString(R.string.navigation_bar_payout_left)
-                txtMainNavRightSubtitle.text = getString(R.string.navigation_bar_payout_right)
+                binding.txtMainNavLeftSubtitle.text = getString(R.string.navigation_bar_payout_left)
+                binding.txtMainNavRightSubtitle.text = getString(R.string.navigation_bar_payout_right)
             }
             3 -> {
-                txtMainNavLeftSubtitle.text = getString(R.string.navigation_bar_workers_left)
-                txtMainNavRightSubtitle.text = getString(R.string.navigation_bar_workers_right)
+                binding.txtMainNavLeftSubtitle.text = getString(R.string.navigation_bar_workers_left)
+                binding.txtMainNavRightSubtitle.text = getString(R.string.navigation_bar_workers_right)
             }
         }
     }
 
     override fun setupConfiguration(configuration: Configuration) {
         this.currentConfiguration = configuration
-        vpMain.currentItem = configuration.defaultTab
+        binding.vpMain.currentItem = configuration.defaultTab
         val screenHeight = WindowUtils.getScreenHeight(activity = this@MainActivity)
 
         when (configuration.defaultTab) {
@@ -464,60 +468,60 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
     }
 
     override fun setupChartHeight(value: Float) {
-        val layoutParams = flChart.layoutParams
+        val layoutParams = binding.flChart.layoutParams
         layoutParams.height = value.toInt()
-        flChart.layoutParams = layoutParams
+        binding.flChart.layoutParams = layoutParams
     }
 
     override fun setupChartView(position: Int) {
-        PaintUtils.setInactiveChartBackground(view = flMainOneHour)
-        PaintUtils.setInactiveChartBackground(view = flMainSixHours)
-        PaintUtils.setInactiveChartBackground(view = flMainTwelveHours)
-        PaintUtils.setInactiveChartBackground(view = flMainOneDay)
-        PaintUtils.setInactiveChartBackground(view = flMainThreeDays)
-        PaintUtils.setInactiveChartBackground(view = flMainAll)
+        PaintUtils.setInactiveChartBackground(view = binding.flMainOneHour)
+        PaintUtils.setInactiveChartBackground(view = binding.flMainSixHours)
+        PaintUtils.setInactiveChartBackground(view = binding.flMainTwelveHours)
+        PaintUtils.setInactiveChartBackground(view = binding.flMainOneDay)
+        PaintUtils.setInactiveChartBackground(view = binding.flMainThreeDays)
+        PaintUtils.setInactiveChartBackground(view = binding.flMainAll)
 
-        txtMainOneHour.setTextColor(ContextCompat.getColor(applicationContext, R.color.text_color_hint))
-        txtMainSixHours.setTextColor(ContextCompat.getColor(applicationContext, R.color.text_color_hint))
-        txtMainTwelveHours.setTextColor(ContextCompat.getColor(applicationContext, R.color.text_color_hint))
-        txtMainOneDay.setTextColor(ContextCompat.getColor(applicationContext, R.color.text_color_hint))
-        txtMainThreeDays.setTextColor(ContextCompat.getColor(applicationContext, R.color.text_color_hint))
-        txtMainAll.setTextColor(ContextCompat.getColor(applicationContext, R.color.text_color_hint))
+        binding.txtMainOneHour.setTextColor(ContextCompat.getColor(applicationContext, R.color.text_color_hint))
+        binding.txtMainSixHours.setTextColor(ContextCompat.getColor(applicationContext, R.color.text_color_hint))
+        binding.txtMainTwelveHours.setTextColor(ContextCompat.getColor(applicationContext, R.color.text_color_hint))
+        binding.txtMainOneDay.setTextColor(ContextCompat.getColor(applicationContext, R.color.text_color_hint))
+        binding.txtMainThreeDays.setTextColor(ContextCompat.getColor(applicationContext, R.color.text_color_hint))
+        binding.txtMainAll.setTextColor(ContextCompat.getColor(applicationContext, R.color.text_color_hint))
 
         when (position) {
             0 -> {
-                PaintUtils.setChartBackground(view = flMainOneHour)
-                txtMainOneHour.setTextColor(Color.WHITE)
+                PaintUtils.setChartBackground(view = binding.flMainOneHour)
+                binding.txtMainOneHour.setTextColor(Color.WHITE)
             }
             1 -> {
-                PaintUtils.setChartBackground(view = flMainSixHours)
-                txtMainSixHours.setTextColor(Color.WHITE)
+                PaintUtils.setChartBackground(view = binding.flMainSixHours)
+                binding.txtMainSixHours.setTextColor(Color.WHITE)
             }
             2 -> {
-                PaintUtils.setChartBackground(view = flMainTwelveHours)
-                txtMainTwelveHours.setTextColor(Color.WHITE)
+                PaintUtils.setChartBackground(view = binding.flMainTwelveHours)
+                binding.txtMainTwelveHours.setTextColor(Color.WHITE)
             }
             3 -> {
-                PaintUtils.setChartBackground(view = flMainOneDay)
-                txtMainOneDay.setTextColor(Color.WHITE)
+                PaintUtils.setChartBackground(view = binding.flMainOneDay)
+                binding.txtMainOneDay.setTextColor(Color.WHITE)
             }
             4 -> {
-                PaintUtils.setChartBackground(view = flMainThreeDays)
-                txtMainThreeDays.setTextColor(Color.WHITE)
+                PaintUtils.setChartBackground(view = binding.flMainThreeDays)
+                binding.txtMainThreeDays.setTextColor(Color.WHITE)
             }
             5 -> {
-                PaintUtils.setChartBackground(view = flMainAll)
-                txtMainAll.setTextColor(Color.WHITE)
+                PaintUtils.setChartBackground(view = binding.flMainAll)
+                binding.txtMainAll.setTextColor(Color.WHITE)
             }
         }
     }
 
     override fun setupIntroBar(introBarPosition: Float) {
-        llMainTopBar.translationY = introBarPosition
+        binding.llMainTopBar.translationY = introBarPosition
     }
 
     override fun setupTabBar(tabBarPosition: Float) {
-        stbMain.translationY = tabBarPosition
+        binding.stbMain.translationY = tabBarPosition
     }
 
     override fun showError(message: String) {
@@ -529,7 +533,7 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
     }
 
     override fun setupChartData(data: List<Entry>) {
-        val xAxis = chartMain.xAxis
+        val xAxis = binding.chartMain.xAxis
         val dataSet = LineDataSet(data, "Template Data")
         dataSet.setDrawFilled(true)
         dataSet.mode = LineDataSet.Mode.CUBIC_BEZIER
@@ -547,13 +551,13 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
 
         val lineData = LineData(dataSet)
 
-        chartMain.data = lineData
-        chartMain.invalidate()
+        binding.chartMain.data = lineData
+        binding.chartMain.invalidate()
 
-        val xMax = chartMain.data.getDataSetByIndex(0).xMax
+        val xMax = binding.chartMain.data.getDataSetByIndex(0).xMax
         val xMin = 0f
         xAxis.axisMaximum = xMax
         xAxis.axisMinimum = xMin
-        chartMain.invalidate()
+        binding.chartMain.invalidate()
     }
 }

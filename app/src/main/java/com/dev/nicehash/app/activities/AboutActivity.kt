@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import com.dev.nicehash.R
 import com.dev.nicehash.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_about.*
 import android.content.pm.PackageManager
 import android.R.attr.versionName
 //import com.google.android.gms.common.util.ClientLibraryUtils.getPackageInfo
@@ -22,11 +21,11 @@ class AboutActivity: BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about)
 
-        imgAboutBack.setOnClickListener { onBackPressed() }
+//        imgAboutBack.setOnClickListener { onBackPressed() }
         try {
             val pInfo = packageManager.getPackageInfo(packageName, 0)
-            txtAboutVersion.text = "${getString(R.string.app_version)} ${pInfo.versionName}, " +
-                    "${getString(R.string.app_build).toLowerCase()} ${pInfo.versionCode}"
+//            txtAboutVersion.text = "${getString(R.string.app_version)} ${pInfo.versionName}, " +
+//                    "${getString(R.string.app_build).toLowerCase()} ${pInfo.versionCode}"
         } catch (e: PackageManager.NameNotFoundException) {
             e.printStackTrace()
         }

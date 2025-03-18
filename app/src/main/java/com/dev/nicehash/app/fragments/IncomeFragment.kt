@@ -24,9 +24,7 @@ import com.dev.nicehash.domain.repositories.CurrencyRepository
 import com.dev.nicehash.domain.repositories.MinerRepository
 import com.dev.nicehash.domain.repositories.MoneyRepository
 import com.dev.nicehash.enums.Keys
-import kotlinx.android.synthetic.main.fragment_income.*
-import ru.terrakok.cicerone.Navigator
-import ru.terrakok.cicerone.android.SupportAppNavigator
+import com.github.terrakok.cicerone.Navigator
 import java.text.DecimalFormat
 import javax.inject.Inject
 
@@ -78,30 +76,32 @@ class IncomeFragment: BaseContainer(), IncomeView {
     }
 
     override fun getNavigator(): Navigator? {
-        return if (navigator == null) {
-            navigator = object: SupportAppNavigator(activity, childFragmentManager, R.id.container) {
-                override fun createActivityIntent(context: Context?, screenKey: String?, data: Any?): Intent? {
-                    return when (screenKey) {
-                        else -> null
-                    }
-                }
+//        return if (navigator == null) {
+//            navigator = object: SupportAppNavigator(activity, childFragmentManager, R.id.container) {
+//                override fun createActivityIntent(context: Context?, screenKey: String?, data: Any?): Intent? {
+//                    return when (screenKey) {
+//                        else -> null
+//                    }
+//                }
+//
+//                override fun createFragment(screenKey: String, data: Any?): Fragment? {
+//                    return when (screenKey) {
+//                        else -> null
+//                    }
+//                }
+//
+//                override fun exit() {
+//                    super.exit()
+//                    activity?.let { (it as RouterProvider).getRouter().exit() }
+//                }
+//            }
+//
+//            navigator as SupportAppNavigator
+//        } else {
+//            navigator!!
+//        }
 
-                override fun createFragment(screenKey: String, data: Any?): Fragment? {
-                    return when (screenKey) {
-                        else -> null
-                    }
-                }
-
-                override fun exit() {
-                    super.exit()
-                    activity?.let { (it as RouterProvider).getRouter().exit() }
-                }
-            }
-
-            navigator as SupportAppNavigator
-        } else {
-            navigator!!
-        }
+        return null
     }
 
     // MARK: - Base implementation
@@ -116,21 +116,21 @@ class IncomeFragment: BaseContainer(), IncomeView {
     // MARK: - View implementation
     @SuppressLint("SetTextI18n")
     override fun setupIncome(income: Income, currencyRate: Float, usdRate: Float) {
-        txtIncomeHourValue.text = DecimalFormat("##.##").format(income.hourValue)
-        txtIncomeHourBtc.text = DecimalFormat("##.########").format(income.hourBtc)
-
-        txtIncomeDayValue.text = DecimalFormat("##.##").format(income.dayValue)
-        txtIncomeDayBtc.text = DecimalFormat("##.########").format(income.dayBtc)
-
-        txtIncomeWeekValue.text = DecimalFormat("##.##").format(income.weekValue)
-        txtIncomeWeekBtc.text = DecimalFormat("##.########").format(income.weekBtc)
-
-        txtIncomeMonthValue.text = DecimalFormat("##.##").format(income.monthValue)
-        txtIncomeMonthBtc.text = DecimalFormat("##.########").format(income.monthBtc)
-
-        txtIncomeBtcUsd.text = " ${DecimalFormat("##.##").format(usdRate)}"
-        txtIncomeCurrency.text = "${getString(R.string.currency_btc)}/${getString(R.string.currency_rub)} = "
-        txtIncomeCurrencyValue.text = DecimalFormat("##.##").format(currencyRate)
+//        txtIncomeHourValue.text = DecimalFormat("##.##").format(income.hourValue)
+//        txtIncomeHourBtc.text = DecimalFormat("##.########").format(income.hourBtc)
+//
+//        txtIncomeDayValue.text = DecimalFormat("##.##").format(income.dayValue)
+//        txtIncomeDayBtc.text = DecimalFormat("##.########").format(income.dayBtc)
+//
+//        txtIncomeWeekValue.text = DecimalFormat("##.##").format(income.weekValue)
+//        txtIncomeWeekBtc.text = DecimalFormat("##.########").format(income.weekBtc)
+//
+//        txtIncomeMonthValue.text = DecimalFormat("##.##").format(income.monthValue)
+//        txtIncomeMonthBtc.text = DecimalFormat("##.########").format(income.monthBtc)
+//
+//        txtIncomeBtcUsd.text = " ${DecimalFormat("##.##").format(usdRate)}"
+//        txtIncomeCurrency.text = "${getString(R.string.currency_btc)}/${getString(R.string.currency_rub)} = "
+//        txtIncomeCurrencyValue.text = DecimalFormat("##.##").format(currencyRate)
 
         (activity as? MainView)?.displayNavigationInfo(leftValue = DecimalFormat("##.######").format(income.dayBtc),
                 rightValue = DecimalFormat("##.##").format(income.dayValue))

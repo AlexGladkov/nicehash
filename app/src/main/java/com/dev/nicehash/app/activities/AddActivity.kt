@@ -8,13 +8,13 @@ import com.arellomobile.mvp.MvpAppCompatActivity
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.base.BaseActivity
+import com.dev.nicehash.databinding.ActivityAddBinding
 import com.dev.nicehash.domain.models.Miner
 import com.dev.nicehash.domain.repositories.ConfigurationRepository
 import com.dev.nicehash.domain.repositories.MinerRepository
 import com.dev.nicehash.enums.Keys
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import kotlinx.android.synthetic.main.activity_add.*
 import javax.inject.Inject
 
 /**
@@ -24,6 +24,7 @@ import javax.inject.Inject
 class AddActivity : BaseActivity() {
     private val TAG = AddActivity::class.java.simpleName
     private var isEditing = false
+    private lateinit var binding: ActivityAddBinding
 
     // MARK: - Repositories
     @Inject lateinit var minerRepository: MinerRepository
@@ -32,21 +33,22 @@ class AddActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         App.appComponent.inject(activity = this@AddActivity)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add)
+        binding = ActivityAddBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         if ((intent?.extras?.get(Keys.Miner.value) as? Bundle) != null) {
             val bundle = intent?.extras?.get(Keys.Miner.value) as? Bundle
             val miner = bundle?.get(Keys.Miner.value) as? Miner
-            txtAddName.setText(miner?.name.orEmpty())
-            txtAddHash.setText(miner?.hash.orEmpty())
-            txtAddTitle.text = getString(R.string.edit_miner_title)
+            binding.txtAddName.setText(miner?.name.orEmpty())
+            binding.txtAddHash.setText(miner?.hash.orEmpty())
+            binding.txtAddTitle.text = getString(R.string.edit_miner_title)
             isEditing = true
         }
 
-        btnAddApply.setOnClickListener {
+        binding.btnAddApply.setOnClickListener {
             if (isEditing) {
                 minerRepository.updateMiner(miner = (intent?.extras?.get(Keys.Miner.value) as? Bundle)
-                        ?.get(Keys.Miner.value) as? Miner, newName = txtAddName.text.toString(), newHash = txtAddHash.text.toString())
+                        ?.get(Keys.Miner.value) as? Miner, newName = binding.txtAddName.text.toString(), newHash = binding.txtAddHash.text.toString())
                         .subscribeOn(Schedulers.newThread())
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe({
@@ -61,8 +63,8 @@ class AddActivity : BaseActivity() {
                         .subscribeOn(Schedulers.computation())
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe({ configuration ->
-                            minerRepository.addMiner(Miner(id = -1, name = txtAddName.text.toString(),
-                                    hash = txtAddHash.text.toString(), isSelected = false))
+                            minerRepository.addMiner(Miner(id = -1, name = binding.txtAddName.text.toString(),
+                                    hash = binding.txtAddHash.text.toString(), isSelected = false))
                                     .subscribeOn(Schedulers.computation())
                                     .observeOn(AndroidSchedulers.mainThread())
                                     .subscribe({ minerId ->

@@ -11,9 +11,9 @@ import com.dev.nicehash.domain.repositories.ConfigurationRepository
 import com.dev.nicehash.domain.repositories.MinerRepository
 import com.dev.nicehash.enums.Keys
 import com.dev.nicehash.enums.ScreenKeys
+import com.github.terrakok.cicerone.Router
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import ru.terrakok.cicerone.Router
 
 /**
  * Created by Alex Gladkov on 23.06.18.
@@ -50,7 +50,7 @@ class ChoosePresenter(val router: Router, val minerRepository: MinerRepository,
                             .subscribeOn(Schedulers.computation())
                             .observeOn(AndroidSchedulers.mainThread())
                             .subscribe({
-                                router.replaceScreen(ScreenKeys.Splash.value)
+//                                router.replaceScreen(ScreenKeys.Splash.value)
                             }, { error ->
 
                             })
@@ -60,17 +60,17 @@ class ChoosePresenter(val router: Router, val minerRepository: MinerRepository,
     }
 
     fun onGearClick() {
-        router.replaceScreen(ScreenKeys.Settings.value)
+//        router.replaceScreen(ScreenKeys.Settings.value)
     }
 
     fun onAddClick() {
-        router.replaceScreen(ScreenKeys.Add.value)
+//        router.replaceScreen(ScreenKeys.Add.value)
     }
 
     fun editClick(miner: Miner) {
         val bundle = Bundle()
         bundle.putParcelable(Keys.Miner.value, miner)
-        router.replaceScreen(ScreenKeys.Edit.value, bundle)
+//        router.replaceScreen(ScreenKeys.Edit.value, bundle)
     }
 
     fun deleteClick(miner: Miner) {

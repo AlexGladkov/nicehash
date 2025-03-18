@@ -1,7 +1,7 @@
 package com.dev.nicehash.app.navigation
 
-import ru.terrakok.cicerone.Cicerone
-import ru.terrakok.cicerone.Router
+import com.github.terrakok.cicerone.Cicerone
+import com.github.terrakok.cicerone.Router
 
 /**
  * Created by agladkov on 11.01.18.

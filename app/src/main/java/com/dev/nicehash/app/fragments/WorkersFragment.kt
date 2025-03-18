@@ -22,9 +22,7 @@ import com.dev.nicehash.domain.models.WorkerHub
 import com.dev.nicehash.domain.repositories.MinerRepository
 import com.dev.nicehash.enums.Keys
 import com.dev.nicehash.helpers.ListConfig
-import kotlinx.android.synthetic.main.fragment_workers.*
-import ru.terrakok.cicerone.Navigator
-import ru.terrakok.cicerone.android.SupportAppNavigator
+import com.github.terrakok.cicerone.Navigator
 import javax.inject.Inject
 
 /**
@@ -77,7 +75,7 @@ class WorkersFragment: BaseContainer(), WorkerView {
                     .setHasFixedSize(true)
                     .setHasNestedScroll(true)
                     .build(it)
-            listConfig.applyConfig(it, recyclerWorkers)
+//            listConfig.applyConfig(it, recyclerWorkers)
         }
 
         workersPresenter.fetchWorkers(miner = arguments?.getString(Keys.Miner.value).orEmpty(),
@@ -88,30 +86,32 @@ class WorkersFragment: BaseContainer(), WorkerView {
     }
 
     override fun getNavigator(): Navigator? {
-        return if (navigator == null) {
-            navigator = object: SupportAppNavigator(activity, childFragmentManager, R.id.container) {
-                override fun createActivityIntent(context: Context?, screenKey: String?, data: Any?): Intent? {
-                    return when (screenKey) {
-                        else -> null
-                    }
-                }
+//        return if (navigator == null) {
+//            navigator = object: SupportAppNavigator(activity, childFragmentManager, R.id.container) {
+//                override fun createActivityIntent(context: Context?, screenKey: String?, data: Any?): Intent? {
+//                    return when (screenKey) {
+//                        else -> null
+//                    }
+//                }
+//
+//                override fun createFragment(screenKey: String, data: Any?): Fragment? {
+//                    return when (screenKey) {
+//                        else -> null
+//                    }
+//                }
+//
+//                override fun exit() {
+//                    super.exit()
+//                    activity?.let { (it as RouterProvider).getRouter().exit() }
+//                }
+//            }
+//
+//            navigator as SupportAppNavigator
+//        } else {
+//            navigator!!
+//        }
 
-                override fun createFragment(screenKey: String, data: Any?): Fragment? {
-                    return when (screenKey) {
-                        else -> null
-                    }
-                }
-
-                override fun exit() {
-                    super.exit()
-                    activity?.let { (it as RouterProvider).getRouter().exit() }
-                }
-            }
-
-            navigator as SupportAppNavigator
-        } else {
-            navigator!!
-        }
+        return null
     }
 
     // MARK: - Base implementation
@@ -131,23 +131,23 @@ class WorkersFragment: BaseContainer(), WorkerView {
             mAdapter.setList(dataList = data)
         }
 
-        recyclerWorkers.visibility = View.VISIBLE
-        txtWorkersNoItems.visibility = View.GONE
+//        recyclerWorkers.visibility = View.VISIBLE
+//        txtWorkersNoItems.visibility = View.GONE
     }
 
     override fun setupNoItems() {
-        recyclerWorkers.visibility = View.GONE
-        txtWorkersNoItems.visibility = View.VISIBLE
+//        recyclerWorkers.visibility = View.GONE
+//        txtWorkersNoItems.visibility = View.VISIBLE
     }
 
     override fun startLoading() {
-        cpvWorkers.visibility = View.VISIBLE
-        txtWorkersNoItems.visibility = View.GONE
-        recyclerWorkers.visibility = View.GONE
+//        cpvWorkers.visibility = View.VISIBLE
+//        txtWorkersNoItems.visibility = View.GONE
+//        recyclerWorkers.visibility = View.GONE
     }
 
     override fun endLoading() {
-        cpvWorkers.visibility = View.GONE
+//        cpvWorkers.visibility = View.GONE
     }
 
     override fun showError(message: String) {

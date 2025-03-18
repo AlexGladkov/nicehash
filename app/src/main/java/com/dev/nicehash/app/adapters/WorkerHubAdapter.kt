@@ -10,7 +10,6 @@ import com.dev.nicehash.base.BaseAdapter
 import com.dev.nicehash.base.BaseViewHolder
 import com.dev.nicehash.domain.models.WorkerHub
 import com.dev.nicehash.helpers.ListConfig
-import kotlinx.android.synthetic.main.fragment_workers.*
 
 /**
  * Created by Alex Gladkov on 15.07.18.
