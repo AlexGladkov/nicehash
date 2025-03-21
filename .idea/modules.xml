@@ -7,6 +7,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/nicehash.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/nicehash.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/nicehash.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/nicehash.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/nicehash.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/nicehash.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microbench/nicehash.microbench.iml" filepath="$PROJECT_DIR$/.idea/modules/microbench/nicehash.microbench.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microbench/nicehash.microbench.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/microbench/nicehash.microbench.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microbench/nicehash.microbench.main.iml" filepath="$PROJECT_DIR$/.idea/modules/microbench/nicehash.microbench.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/microbench/nicehash.microbench.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/microbench/nicehash.microbench.unitTest.iml" />
     </modules>
   </component>
 </project>

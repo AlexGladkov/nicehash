@@ -3,12 +3,12 @@ package com.dev.nicehash.app.activities
 import android.os.Bundle
 import android.widget.Toast
 import com.anjlab.android.iab.v3.BillingProcessor
-import com.arellomobile.mvp.presenter.InjectPresenter
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.presenters.PurchasePresenter
 import com.dev.nicehash.app.views.PurchaseView
 import com.dev.nicehash.base.BaseActivity
+import moxy.presenter.InjectPresenter
 
 /**
  * Created by Alex Gladkov on 24.06.18.

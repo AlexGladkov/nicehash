@@ -3,10 +3,6 @@ package com.dev.nicehash.app.activities
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v4.view.PagerAdapter
-import android.support.v4.view.ViewPager
-import android.support.v4.widget.NestedScrollView
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -14,8 +10,11 @@ import android.view.ViewGroup
 import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
-import com.arellomobile.mvp.presenter.InjectPresenter
-import com.arellomobile.mvp.presenter.ProvidePresenter
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
+import androidx.core.widget.NestedScrollView
+import androidx.viewpager.widget.PagerAdapter
+import androidx.viewpager.widget.ViewPager
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.fragments.*
@@ -51,6 +50,8 @@ import com.github.terrakok.cicerone.Router
 import com.ogaclejapan.smarttablayout.SmartTabLayout
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems
+import moxy.presenter.InjectPresenter
+import moxy.presenter.ProvidePresenter
 import java.text.DecimalFormat
 import javax.inject.Inject
 
@@ -64,7 +65,8 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
     @Inject lateinit var exchangeServer: ExchangeServer
 
     // MARK: - Presenter setup
-    @InjectPresenter lateinit var mainPresenter: MainPresenter
+    @InjectPresenter
+    lateinit var mainPresenter: MainPresenter
 
     private lateinit var binding: ActivityMainBinding
 
@@ -169,12 +171,12 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
         initFragments()
         tuneChart()
 
-        binding.nsvMain.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { _, _, scrollY, _, _ ->
-            mainPresenter.handleScrolling(scrollY = scrollY, daysBarHeight =
-            WindowUtils.convertDpToPixel(dp = SizeContract.daysBarHeight, context = applicationContext),
-                    introBarHeight = WindowUtils.convertDpToPixel(dp = SizeContract.introBarHeight,
-                            context = applicationContext))
-        })
+//        binding.nsvMain.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { _, _, scrollY, _, _ ->
+//            mainPresenter.handleScrolling(scrollY = scrollY, daysBarHeight =
+//            WindowUtils.convertDpToPixel(dp = SizeContract.daysBarHeight, context = applicationContext),
+//                    introBarHeight = WindowUtils.convertDpToPixel(dp = SizeContract.introBarHeight,
+//                            context = applicationContext))
+//        })
 
         binding.txtMainTitle.text = intent?.extras?.getString(Keys.MinerTitle.value).orEmpty()
         binding.flMainOneHour.setOnClickListener { mainPresenter.onChartTimeClick(position = 0,
@@ -205,8 +207,8 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
                 .create())
 
         binding.stbMain.setCustomTabView(this)
-        binding.vpMain.adapter = adapter
-        binding.stbMain.setViewPager(binding.vpMain)
+//        binding.vpMain.adapter = adapter
+//        binding.stbMain.setViewPager(binding.vpMain)
         binding.stbMain.setOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
@@ -446,7 +448,7 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
 
     override fun setupConfiguration(configuration: Configuration) {
         this.currentConfiguration = configuration
-        binding.vpMain.currentItem = configuration.defaultTab
+//        binding.vpMain.currentItem = configuration.defaultTab
         val screenHeight = WindowUtils.getScreenHeight(activity = this@MainActivity)
 
         when (configuration.defaultTab) {

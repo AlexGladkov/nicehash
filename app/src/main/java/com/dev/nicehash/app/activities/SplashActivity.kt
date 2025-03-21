@@ -3,8 +3,6 @@ package com.dev.nicehash.app.activities
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import com.arellomobile.mvp.presenter.InjectPresenter
-import com.arellomobile.mvp.presenter.ProvidePresenter
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.presenters.SplashPresenter
@@ -18,6 +16,8 @@ import com.dev.nicehash.domain.repositories.CurrencyRepository
 import com.dev.nicehash.domain.repositories.GeneralRepository
 import com.dev.nicehash.domain.repositories.MinerRepository
 import com.dev.nicehash.enums.Keys
+import moxy.presenter.InjectPresenter
+import moxy.presenter.ProvidePresenter
 import javax.inject.Inject
 
 /**
@@ -34,7 +34,8 @@ class SplashActivity: BaseActivity(), SplashView {
     @Inject lateinit var currencyRepositorry: CurrencyRepository
     @Inject lateinit var exchangeServer: ExchangeServer
 
-    @InjectPresenter lateinit var splashPresenter: SplashPresenter
+    @InjectPresenter
+    lateinit var splashPresenter: SplashPresenter
     @ProvidePresenter
     fun provideSplashPresenter(): SplashPresenter {
         return SplashPresenter(configurationRepository = configurationRepository,

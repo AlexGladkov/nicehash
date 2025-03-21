@@ -1,9 +1,9 @@
 package com.dev.nicehash.app.presenters
 
-import com.arellomobile.mvp.InjectViewState
-import com.arellomobile.mvp.MvpPresenter
 import com.dev.nicehash.app.views.DetailView
 import com.github.mikephil.charting.data.Entry
+import moxy.InjectViewState
+import moxy.MvpPresenter
 
 /**
  * Created by Alex Gladkov on 30.07.18.

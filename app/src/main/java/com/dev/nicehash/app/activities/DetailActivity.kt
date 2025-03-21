@@ -2,10 +2,7 @@ package com.dev.nicehash.app.activities
 
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v7.app.AppCompatActivity
-import android.util.Log
-import com.arellomobile.mvp.presenter.InjectPresenter
+import androidx.core.content.ContextCompat
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.presenters.DetailPresenter
@@ -17,7 +14,6 @@ import com.dev.nicehash.enums.Keys
 import com.dev.nicehash.enums.Theme
 import com.dev.nicehash.helpers.PaintUtils
 import com.dev.nicehash.helpers.WindowUtils
-import com.github.mikephil.charting.components.AxisBase
 import com.github.mikephil.charting.components.LimitLine
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.components.YAxis
@@ -25,6 +21,7 @@ import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.formatter.IAxisValueFormatter
+import moxy.presenter.InjectPresenter
 
 /**
  * Created by Alex Gladkov on 30.07.18
@@ -33,7 +30,8 @@ import com.github.mikephil.charting.formatter.IAxisValueFormatter
 class DetailActivity: BaseActivity(), DetailView {
     private val TAG = DetailActivity::class.java.simpleName
 
-    @InjectPresenter lateinit var detailPresenter: DetailPresenter
+    @InjectPresenter
+    lateinit var detailPresenter: DetailPresenter
 
     private lateinit var binding: ActivityDetailBinding
 

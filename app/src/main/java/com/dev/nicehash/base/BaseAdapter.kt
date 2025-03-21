@@ -1,6 +1,6 @@
 package com.dev.nicehash.base
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 
 /**
  * Created by Alex Gladkov on 23.06.18.

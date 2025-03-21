@@ -1,9 +1,6 @@
 package com.dev.nicehash.app.presenters
 
 import android.os.Handler
-import android.util.Log
-import com.arellomobile.mvp.InjectViewState
-import com.arellomobile.mvp.MvpPresenter
 import com.dev.nicehash.app.servers.ExchangeServer
 import com.dev.nicehash.app.servers.ExchangeServerImpl
 import com.dev.nicehash.app.views.PayoutsView
@@ -12,6 +9,8 @@ import com.dev.nicehash.domain.repositories.MinerRepository
 import io.reactivex.Scheduler
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import moxy.InjectViewState
+import moxy.MvpPresenter
 import kotlin.concurrent.thread
 
 /**

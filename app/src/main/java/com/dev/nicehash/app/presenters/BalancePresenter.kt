@@ -1,8 +1,6 @@
 package com.dev.nicehash.app.presenters
 
 import android.util.Log
-import com.arellomobile.mvp.InjectViewState
-import com.arellomobile.mvp.MvpPresenter
 import com.dev.nicehash.app.servers.ExchangeServer
 import com.dev.nicehash.app.servers.ExchangeServerImpl
 import com.dev.nicehash.app.views.BalanceView
@@ -11,6 +9,8 @@ import com.dev.nicehash.domain.repositories.MinerRepository
 import com.dev.nicehash.domain.repositories.MoneyRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import moxy.InjectViewState
+import moxy.MvpPresenter
 import java.text.DecimalFormat
 
 /**

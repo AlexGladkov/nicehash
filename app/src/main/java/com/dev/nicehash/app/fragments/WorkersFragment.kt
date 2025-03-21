@@ -3,13 +3,10 @@ package com.dev.nicehash.app.fragments
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.arellomobile.mvp.presenter.InjectPresenter
-import com.arellomobile.mvp.presenter.ProvidePresenter
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.adapters.WorkerHubAdapter
@@ -23,6 +20,8 @@ import com.dev.nicehash.domain.repositories.MinerRepository
 import com.dev.nicehash.enums.Keys
 import com.dev.nicehash.helpers.ListConfig
 import com.github.terrakok.cicerone.Navigator
+import moxy.presenter.InjectPresenter
+import moxy.presenter.ProvidePresenter
 import javax.inject.Inject
 
 /**
@@ -35,7 +34,8 @@ class WorkersFragment: BaseContainer(), WorkerView {
     @Inject lateinit var minerRepository: MinerRepository
 
     // MARK: - Presenter setup
-    @InjectPresenter lateinit var workersPresenter: WorkerPresenter
+    @InjectPresenter
+    lateinit var workersPresenter: WorkerPresenter
     @ProvidePresenter
     fun provideWorkerPresenter(): WorkerPresenter {
         return WorkerPresenter(minerRepository = minerRepository)

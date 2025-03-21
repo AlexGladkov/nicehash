@@ -1,6 +1,5 @@
 package com.dev.nicehash.app.adapters
 
-import android.support.v4.content.ContextCompat
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +8,7 @@ import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.PopupMenu
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.base.BaseAdapter

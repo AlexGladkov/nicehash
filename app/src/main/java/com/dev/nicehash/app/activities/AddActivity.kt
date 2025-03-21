@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.arellomobile.mvp.MvpAppCompatActivity
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.base.BaseActivity

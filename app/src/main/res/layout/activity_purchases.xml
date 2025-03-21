@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="?attr/colorBackgroundSecondary">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/tbPurchases"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
@@ -42,9 +42,9 @@
                 android:textStyle="bold" />
 
         </LinearLayout>
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp">
@@ -310,5 +310,5 @@
 
         </LinearLayout>
 
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 </FrameLayout>

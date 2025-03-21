@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:background="?attr/colorBackgroundPrimary"
         android:id="@+id/scroll_about"
         android:layout_height="wrap_content"
@@ -398,7 +398,7 @@
 
         </RelativeLayout>
 
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <ImageView
         android:background="?attr/buttonRipple"

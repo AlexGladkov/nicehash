@@ -1,10 +1,10 @@
 package com.dev.nicehash.app.adapters
 
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import com.dev.nicehash.R
 import com.dev.nicehash.base.BaseAdapter
 import com.dev.nicehash.base.BaseViewHolder

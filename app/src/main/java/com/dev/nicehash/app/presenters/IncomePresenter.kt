@@ -1,17 +1,13 @@
 package com.dev.nicehash.app.presenters
 
-import android.util.Log
-import com.arellomobile.mvp.InjectViewState
-import com.arellomobile.mvp.MvpPresenter
 import com.dev.nicehash.app.servers.ExchangeServer
 import com.dev.nicehash.app.servers.ExchangeServerImpl
 import com.dev.nicehash.app.views.IncomeView
-import com.dev.nicehash.domain.models.Income
-import com.dev.nicehash.domain.repositories.CurrencyRepository
-import com.dev.nicehash.domain.repositories.MinerRepository
 import com.dev.nicehash.domain.repositories.MoneyRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import moxy.InjectViewState
+import moxy.MvpPresenter
 
 /**
  * Created by Alex Gladkov on 15.07.18.

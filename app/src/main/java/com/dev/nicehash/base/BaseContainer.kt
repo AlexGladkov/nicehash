@@ -1,8 +1,6 @@
 package com.dev.nicehash.base
 
 import android.os.Bundle
-import com.arellomobile.mvp.MvpAppCompatFragment
-import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.interfaces.BackButtonListener
 import com.dev.nicehash.app.interfaces.RouterProvider
@@ -11,6 +9,7 @@ import com.dev.nicehash.enums.Keys
 import com.github.terrakok.cicerone.Cicerone
 import com.github.terrakok.cicerone.Navigator
 import com.github.terrakok.cicerone.Router
+import moxy.MvpAppCompatFragment
 import javax.inject.Inject
 
 /**

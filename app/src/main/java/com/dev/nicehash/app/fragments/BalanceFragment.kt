@@ -3,13 +3,10 @@ package com.dev.nicehash.app.fragments
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.arellomobile.mvp.presenter.InjectPresenter
-import com.arellomobile.mvp.presenter.ProvidePresenter
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.adapters.BalanceAdapter
@@ -28,6 +25,8 @@ import com.dev.nicehash.enums.Keys
 import com.dev.nicehash.enums.ScreenKeys
 import com.dev.nicehash.helpers.ListConfig
 import com.github.terrakok.cicerone.Navigator
+import moxy.presenter.InjectPresenter
+import moxy.presenter.ProvidePresenter
 import javax.inject.Inject
 
 /**
@@ -42,7 +41,8 @@ class BalanceFragment: BaseContainer(), BalanceView {
     @Inject lateinit var exchangeServer: ExchangeServer
 
     // MARK: - Presenter setup
-    @InjectPresenter lateinit var balancePresenter: BalancePresenter
+    @InjectPresenter
+    lateinit var balancePresenter: BalancePresenter
     @ProvidePresenter
     fun provideBalancePresenter(): BalancePresenter {
         return BalancePresenter(minerRepository = minerRepository, exchangeServer = exchangeServer,

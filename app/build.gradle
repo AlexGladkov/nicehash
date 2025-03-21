@@ -9,7 +9,7 @@ android {
     compileSdkVersion 35
     defaultConfig {
         applicationId "com.dev.nicehash"
-        minSdkVersion 21
+        minSdkVersion 28
         targetSdkVersion 33
         versionCode 4
         versionName "1.0"
@@ -32,6 +32,12 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 
+    packagingOptions {
+        resources {
+            excludes += "META-INF/androidx.versionedparcelable_versionedparcelable.version"
+        }
+    }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
@@ -50,8 +56,11 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    implementation("androidx.benchmark:benchmark-macro-junit4:1.3.3")
+    implementation("androidx.test.uiautomator:uiautomator:2.3.0")
+
     def appCompat = '28.0.0'
-    implementation "com.android.support:appcompat-v7:$appCompat"
+    implementation("com.android.support:appcompat-v7:$appCompat")
     implementation "com.android.support:recyclerview-v7:$appCompat"
     implementation "com.android.support:design:$appCompat"
     implementation "com.android.support:exifinterface:$appCompat"
@@ -70,10 +79,10 @@ dependencies {
     implementation 'com.jakewharton.timber:timber:4.7.1'
 
     // MVP part
-    implementation 'com.arello-mobile:moxy:1.5.5'
-    implementation 'com.arello-mobile:moxy-android:1.5.5'
-    implementation 'com.arello-mobile:moxy-app-compat:1.5.5'
-    kapt 'com.arello-mobile:moxy-compiler:1.5.5'
+    implementation 'com.github.moxy-community:moxy:2.2.2'
+    implementation 'com.github.moxy-community:moxy-android:2.2.2'
+    implementation 'com.github.moxy-community:moxy-app-compat:2.2.2'
+    kapt 'com.github.moxy-community:moxy-compiler:2.2.2'
 
 //    implementation 'com.google.firebase:firebase-core:16.0.0'
 //    implementation 'com.google.firebase:firebase-invites:16.0.0'
@@ -87,7 +96,7 @@ dependencies {
     kapt "com.google.dagger:dagger-compiler:$daggerVersion"
 
     // Storage
-    def room_version = "2.5.2"
+    def room_version = "2.6.1"
     implementation("androidx.room:room-runtime:$room_version")
     implementation("androidx.room:room-rxjava2:$room_version")
     kapt("androidx.room:room-compiler:$room_version")

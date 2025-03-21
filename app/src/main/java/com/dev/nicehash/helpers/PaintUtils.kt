@@ -2,9 +2,9 @@ package com.dev.nicehash.helpers
 
 import android.content.Context
 import android.graphics.drawable.Drawable
-import android.support.v4.content.ContextCompat
 import android.view.View
 import android.widget.FrameLayout
+import androidx.core.content.ContextCompat
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.enums.Theme

@@ -3,10 +3,6 @@ package com.dev.nicehash.app.activities
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.PopupMenu
-import android.widget.Toast
-import com.arellomobile.mvp.presenter.InjectPresenter
-import com.arellomobile.mvp.presenter.ProvidePresenter
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.interfaces.RouterProvider
@@ -23,6 +19,8 @@ import com.github.terrakok.cicerone.Navigator
 import com.github.terrakok.cicerone.NavigatorHolder
 import com.github.terrakok.cicerone.Replace
 import com.github.terrakok.cicerone.Router
+import moxy.presenter.InjectPresenter
+import moxy.presenter.ProvidePresenter
 import javax.inject.Inject
 
 /**
@@ -38,7 +36,8 @@ class SettingsActivity : BaseActivity(), RouterProvider, SettingsView {
     @Inject lateinit var configurationRepository: ConfigurationRepository
 
     // MARK: - Presenter
-    @InjectPresenter lateinit var settingsPresenter: SettingsPresenter
+    @InjectPresenter
+    lateinit var settingsPresenter: SettingsPresenter
 
     @ProvidePresenter
     fun provideSettingsPresenter(): SettingsPresenter {
