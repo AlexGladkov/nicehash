@@ -1,15 +1,14 @@
 package com.dev.nicehash.base
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.view.WindowManager
-import com.arellomobile.mvp.MvpAppCompatActivity
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.enums.Theme
 import android.app.Activity
 import android.graphics.Color
+import moxy.MvpAppCompatActivity
 
 
 /**

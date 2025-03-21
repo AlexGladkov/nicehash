@@ -1,10 +1,10 @@
 package com.dev.nicehash.app.activities
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.arellomobile.mvp.MvpAppCompatActivity
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.base.BaseActivity
@@ -30,6 +30,7 @@ class AddActivity : BaseActivity() {
     @Inject lateinit var minerRepository: MinerRepository
     @Inject lateinit var configurationRepository: ConfigurationRepository
 
+    @SuppressLint("CheckResult")
     override fun onCreate(savedInstanceState: Bundle?) {
         App.appComponent.inject(activity = this@AddActivity)
         super.onCreate(savedInstanceState)

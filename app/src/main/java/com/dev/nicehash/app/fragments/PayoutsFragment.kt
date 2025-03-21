@@ -3,14 +3,10 @@ package com.dev.nicehash.app.fragments
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.arellomobile.mvp.presenter.InjectPresenter
-import com.arellomobile.mvp.presenter.ProvidePresenter
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.adapters.PayoutAdapter
@@ -25,6 +21,8 @@ import com.dev.nicehash.domain.repositories.MinerRepository
 import com.dev.nicehash.enums.Keys
 import com.dev.nicehash.helpers.ListConfig
 import com.github.terrakok.cicerone.Navigator
+import moxy.presenter.InjectPresenter
+import moxy.presenter.ProvidePresenter
 import java.text.DecimalFormat
 import javax.inject.Inject
 
@@ -40,7 +38,8 @@ class PayoutsFragment: BaseContainer(), PayoutsView {
     @Inject lateinit var exchangeServer: ExchangeServer
 
     // MARK: - Presenter setup
-    @InjectPresenter lateinit var payoutsPresenter: PayoutsPresenter
+    @InjectPresenter
+    lateinit var payoutsPresenter: PayoutsPresenter
     @ProvidePresenter
     fun providePresenter(): PayoutsPresenter {
         return PayoutsPresenter(minerRepository = minerRepository, exchangeServer = exchangeServer)

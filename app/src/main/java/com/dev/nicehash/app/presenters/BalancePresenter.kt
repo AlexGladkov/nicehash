@@ -1,8 +1,6 @@
 package com.dev.nicehash.app.presenters
 
-import android.util.Log
-import com.arellomobile.mvp.InjectViewState
-import com.arellomobile.mvp.MvpPresenter
+import android.annotation.SuppressLint
 import com.dev.nicehash.app.servers.ExchangeServer
 import com.dev.nicehash.app.servers.ExchangeServerImpl
 import com.dev.nicehash.app.views.BalanceView
@@ -11,6 +9,8 @@ import com.dev.nicehash.domain.repositories.MinerRepository
 import com.dev.nicehash.domain.repositories.MoneyRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import moxy.InjectViewState
+import moxy.MvpPresenter
 import java.text.DecimalFormat
 
 /**
@@ -23,6 +23,7 @@ class BalancePresenter(val minerRepository: MinerRepository,
                        val currency: ExchangeServerImpl.ExchangeCode): MvpPresenter<BalanceView>() {
     private val TAG = BalancePresenter::class.java.simpleName
 
+    @SuppressLint("CheckResult")
     fun fetchUnpaid(miner: String, id: Int) {
         moneyRepository.fetchUnpaidMoney(miner = miner)
                 .subscribeOn(Schedulers.newThread())
@@ -36,6 +37,7 @@ class BalancePresenter(val minerRepository: MinerRepository,
                 })
     }
 
+    @SuppressLint("CheckResult")
     fun fetchBalance(miner: String, id: Int, isRefresh: Boolean) {
         if (id < 0) {
             val array = ArrayList<Balance>()

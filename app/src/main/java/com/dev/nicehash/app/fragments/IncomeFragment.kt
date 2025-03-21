@@ -4,12 +4,9 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.arellomobile.mvp.presenter.InjectPresenter
-import com.arellomobile.mvp.presenter.ProvidePresenter
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.interfaces.RouterProvider
@@ -25,6 +22,8 @@ import com.dev.nicehash.domain.repositories.MinerRepository
 import com.dev.nicehash.domain.repositories.MoneyRepository
 import com.dev.nicehash.enums.Keys
 import com.github.terrakok.cicerone.Navigator
+import moxy.presenter.InjectPresenter
+import moxy.presenter.ProvidePresenter
 import java.text.DecimalFormat
 import javax.inject.Inject
 
@@ -35,7 +34,8 @@ import javax.inject.Inject
 class IncomeFragment: BaseContainer(), IncomeView {
 
     // MARK: - Presenter setup
-    @InjectPresenter lateinit var incomePresenter: IncomePresenter
+    @InjectPresenter
+    lateinit var incomePresenter: IncomePresenter
     @ProvidePresenter
     fun provideIncomePresenter(): IncomePresenter {
         return IncomePresenter(exchangeServer = exchangeServer,

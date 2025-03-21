@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="tech.mobiledeveloper.microbench.ExampleMacroBenchmark" tests="1" failures="0" errors="0" skipped="0" time="449.431" timestamp="2025-03-19T15:13:10" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel 9 - 14" />
+    <property name="flavor" value="" />
+    <property name="project" value=":microbench" />
+  </properties>
+  <testcase name="startup" classname="tech.mobiledeveloper.microbench.ExampleMacroBenchmark" time="402.52" />
+</testsuite>

@@ -1,13 +1,14 @@
 package com.dev.nicehash.app.presenters
 
-import com.arellomobile.mvp.InjectViewState
-import com.arellomobile.mvp.MvpPresenter
+import android.annotation.SuppressLint
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.views.ThemesView
 import com.dev.nicehash.domain.repositories.ConfigurationRepository
 import com.dev.nicehash.enums.Theme
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import moxy.InjectViewState
+import moxy.MvpPresenter
 
 /**
  * Created by Alex Gladkov on 21.07.18.
@@ -49,6 +50,7 @@ class ThemesPresenter(val configurationRepository: ConfigurationRepository): Mvp
         viewState.switchTheme(isLight = isLight, color = position)
     }
 
+    @SuppressLint("CheckResult")
     private fun saveSettings() {
         configurationRepository.fetchConfiguration()
                 .subscribeOn(Schedulers.newThread())

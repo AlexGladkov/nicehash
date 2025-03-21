@@ -1,0 +1,253 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="tech.mobiledeveloper.microbench.test" >
+4
+5    <uses-sdk
+5-->/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/tmp/manifest/androidTest/release/tempFile2ProcessTestManifest8906679591291754428.xml:6:5-8:41
+6        android:minSdkVersion="26"
+6-->/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/tmp/manifest/androidTest/release/tempFile2ProcessTestManifest8906679591291754428.xml:7:9-35
+7        android:targetSdkVersion="35" />
+7-->/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/tmp/manifest/androidTest/release/tempFile2ProcessTestManifest8906679591291754428.xml:8:9-38
+8
+9    <instrumentation
+9-->/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/tmp/manifest/androidTest/release/tempFile2ProcessTestManifest8906679591291754428.xml:10:5-15:72
+10        android:name="androidx.benchmark.junit4.AndroidBenchmarkRunner"
+10-->/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/tmp/manifest/androidTest/release/tempFile2ProcessTestManifest8906679591291754428.xml:11:9-72
+11        android:functionalTest="false"
+11-->/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/tmp/manifest/androidTest/release/tempFile2ProcessTestManifest8906679591291754428.xml:12:9-39
+12        android:handleProfiling="false"
+12-->/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/tmp/manifest/androidTest/release/tempFile2ProcessTestManifest8906679591291754428.xml:13:9-40
+13        android:label="Tests for tech.mobiledeveloper.microbench.test"
+13-->/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/tmp/manifest/androidTest/release/tempFile2ProcessTestManifest8906679591291754428.xml:14:9-71
+14        android:targetPackage="tech.mobiledeveloper.microbench.test" />
+14-->/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/tmp/manifest/androidTest/release/tempFile2ProcessTestManifest8906679591291754428.xml:15:9-69
+15
+16    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+16-->[androidx.benchmark:benchmark-macro:1.3.3] /Users/neuradev/.gradle/caches/8.10/transforms/6d4bfb99fd74a03b69a4e72a3af3c45a/transformed/jetified-benchmark-macro-1.3.3/AndroidManifest.xml:23:5-25:53
+16-->[androidx.benchmark:benchmark-macro:1.3.3] /Users/neuradev/.gradle/caches/8.10/transforms/6d4bfb99fd74a03b69a4e72a3af3c45a/transformed/jetified-benchmark-macro-1.3.3/AndroidManifest.xml:24:9-61
+17    <!--
+18         Internet permission is required for perfetto trace shell processor http server but
+19        it's used to reach localhost only
+20    -->
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->[androidx.benchmark:benchmark-macro:1.3.3] /Users/neuradev/.gradle/caches/8.10/transforms/6d4bfb99fd74a03b69a4e72a3af3c45a/transformed/jetified-benchmark-macro-1.3.3/AndroidManifest.xml:31:5-67
+21-->[androidx.benchmark:benchmark-macro:1.3.3] /Users/neuradev/.gradle/caches/8.10/transforms/6d4bfb99fd74a03b69a4e72a3af3c45a/transformed/jetified-benchmark-macro-1.3.3/AndroidManifest.xml:31:22-64
+22    <!--
+23    This is needed to write benchmark report data to an external directory during instrumented
+24    tests to allow the accompanying androidx.benchmark gradle plugin to pull the reports onto host
+25     machine after the tests are done running.
+26    -->
+27    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+27-->[androidx.benchmark:benchmark-common:1.3.3] /Users/neuradev/.gradle/caches/8.10/transforms/1c950a3f5689de8ef0008d6bd84e36cf/transformed/jetified-benchmark-common-1.3.3/AndroidManifest.xml:27:5-81
+27-->[androidx.benchmark:benchmark-common:1.3.3] /Users/neuradev/.gradle/caches/8.10/transforms/1c950a3f5689de8ef0008d6bd84e36cf/transformed/jetified-benchmark-common-1.3.3/AndroidManifest.xml:27:22-78
+28    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+29
+30    <queries>
+30-->[androidx.test:runner:1.5.2] /Users/neuradev/.gradle/caches/8.10/transforms/47174be60c56b63cf95a2805cbad3cf1/transformed/runner-1.5.2/AndroidManifest.xml:24:5-28:15
+31        <package android:name="androidx.test.orchestrator" />
+31-->[androidx.test:runner:1.5.2] /Users/neuradev/.gradle/caches/8.10/transforms/47174be60c56b63cf95a2805cbad3cf1/transformed/runner-1.5.2/AndroidManifest.xml:25:9-62
+31-->[androidx.test:runner:1.5.2] /Users/neuradev/.gradle/caches/8.10/transforms/47174be60c56b63cf95a2805cbad3cf1/transformed/runner-1.5.2/AndroidManifest.xml:25:18-59
+32        <package android:name="androidx.test.services" />
+32-->[androidx.test:runner:1.5.2] /Users/neuradev/.gradle/caches/8.10/transforms/47174be60c56b63cf95a2805cbad3cf1/transformed/runner-1.5.2/AndroidManifest.xml:26:9-58
+32-->[androidx.test:runner:1.5.2] /Users/neuradev/.gradle/caches/8.10/transforms/47174be60c56b63cf95a2805cbad3cf1/transformed/runner-1.5.2/AndroidManifest.xml:26:18-55
+33        <package android:name="com.google.android.apps.common.testing.services" />
+33-->[androidx.test:runner:1.5.2] /Users/neuradev/.gradle/caches/8.10/transforms/47174be60c56b63cf95a2805cbad3cf1/transformed/runner-1.5.2/AndroidManifest.xml:27:9-83
+33-->[androidx.test:runner:1.5.2] /Users/neuradev/.gradle/caches/8.10/transforms/47174be60c56b63cf95a2805cbad3cf1/transformed/runner-1.5.2/AndroidManifest.xml:27:18-80
+34    </queries>
+35
+36    <uses-permission android:name="android.permission.REORDER_TASKS" />
+36-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:24:5-72
+36-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:24:22-69
+37
+38    <permission
+38-->[androidx.core:core:1.9.0] /Users/neuradev/.gradle/caches/8.10/transforms/bf5d103a86767a8ae8a7f440a97c3cec/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+39        android:name="tech.mobiledeveloper.microbench.test.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+39-->[androidx.core:core:1.9.0] /Users/neuradev/.gradle/caches/8.10/transforms/bf5d103a86767a8ae8a7f440a97c3cec/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+40        android:protectionLevel="signature" />
+40-->[androidx.core:core:1.9.0] /Users/neuradev/.gradle/caches/8.10/transforms/bf5d103a86767a8ae8a7f440a97c3cec/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+41
+42    <uses-permission android:name="tech.mobiledeveloper.microbench.test.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+42-->[androidx.core:core:1.9.0] /Users/neuradev/.gradle/caches/8.10/transforms/bf5d103a86767a8ae8a7f440a97c3cec/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+42-->[androidx.core:core:1.9.0] /Users/neuradev/.gradle/caches/8.10/transforms/bf5d103a86767a8ae8a7f440a97c3cec/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+43    <!--
+44      Important: disable debugging for accurate performance results
+45
+46      In a com.android.library project, this flag must be disabled from this
+47      manifest, as it is not possible to override this flag from Gradle.
+48    -->
+49    <application
+49-->/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/tmp/manifest/androidTest/release/tempFile2ProcessTestManifest8906679591291754428.xml:22:5-29:19
+50        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+50-->[androidx.core:core:1.9.0] /Users/neuradev/.gradle/caches/8.10/transforms/bf5d103a86767a8ae8a7f440a97c3cec/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+51        android:debuggable="false"
+51-->/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/tmp/manifest/androidTest/release/tempFile2ProcessTestManifest8906679591291754428.xml:23:9-35
+52        android:extractNativeLibs="false"
+53        android:networkSecurityConfig="@xml/network_security_config" >
+53-->[androidx.benchmark:benchmark-macro:1.3.3] /Users/neuradev/.gradle/caches/8.10/transforms/6d4bfb99fd74a03b69a4e72a3af3c45a/transformed/jetified-benchmark-macro-1.3.3/AndroidManifest.xml:42:18-78
+54        <profileable android:shell="true" />
+54-->/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/tmp/manifest/androidTest/release/tempFile2ProcessTestManifest8906679591291754428.xml:26:9-45
+54-->/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/tmp/manifest/androidTest/release/tempFile2ProcessTestManifest8906679591291754428.xml:26:22-42
+55
+56        <uses-library android:name="android.test.runner" />
+56-->/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/tmp/manifest/androidTest/release/tempFile2ProcessTestManifest8906679591291754428.xml:28:9-60
+56-->/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/tmp/manifest/androidTest/release/tempFile2ProcessTestManifest8906679591291754428.xml:28:23-57
+57        <!-- Activity used to block background content while benchmarks are running -->
+58        <activity
+58-->[androidx.benchmark:benchmark-common:1.3.3] /Users/neuradev/.gradle/caches/8.10/transforms/1c950a3f5689de8ef0008d6bd84e36cf/transformed/jetified-benchmark-common-1.3.3/AndroidManifest.xml:32:9-36:20
+59            android:name="androidx.benchmark.IsolationActivity"
+59-->[androidx.benchmark:benchmark-common:1.3.3] /Users/neuradev/.gradle/caches/8.10/transforms/1c950a3f5689de8ef0008d6bd84e36cf/transformed/jetified-benchmark-common-1.3.3/AndroidManifest.xml:33:13-64
+60            android:exported="true"
+60-->[androidx.benchmark:benchmark-common:1.3.3] /Users/neuradev/.gradle/caches/8.10/transforms/1c950a3f5689de8ef0008d6bd84e36cf/transformed/jetified-benchmark-common-1.3.3/AndroidManifest.xml:34:13-36
+61            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+61-->[androidx.benchmark:benchmark-common:1.3.3] /Users/neuradev/.gradle/caches/8.10/transforms/1c950a3f5689de8ef0008d6bd84e36cf/transformed/jetified-benchmark-common-1.3.3/AndroidManifest.xml:35:13-77
+62        </activity>
+63        <activity
+63-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:27:9-34:20
+64            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+64-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:28:13-99
+65            android:exported="true"
+65-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:29:13-36
+66            android:theme="@style/WhiteBackgroundTheme" >
+66-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:30:13-56
+67            <intent-filter android:priority="-100" >
+67-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:31:13-33:29
+67-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:31:28-51
+68                <category android:name="android.intent.category.LAUNCHER" />
+68-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:32:17-77
+68-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:32:27-74
+69            </intent-filter>
+70        </activity>
+71        <activity
+71-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:35:9-42:20
+72            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+72-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:36:13-95
+73            android:exported="true"
+73-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:37:13-36
+74            android:theme="@style/WhiteBackgroundTheme" >
+74-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:38:13-56
+75            <intent-filter android:priority="-100" >
+75-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:31:13-33:29
+75-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:31:28-51
+76                <category android:name="android.intent.category.LAUNCHER" />
+76-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:32:17-77
+76-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:32:27-74
+77            </intent-filter>
+78        </activity>
+79        <activity
+79-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:43:9-50:20
+80            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+80-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:44:13-103
+81            android:exported="true"
+81-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:45:13-36
+82            android:theme="@style/WhiteBackgroundDialogTheme" >
+82-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:46:13-62
+83            <intent-filter android:priority="-100" >
+83-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:31:13-33:29
+83-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:31:28-51
+84                <category android:name="android.intent.category.LAUNCHER" />
+84-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:32:17-77
+84-->[androidx.test:core:1.6.1] /Users/neuradev/.gradle/caches/8.10/transforms/5aa66d0d6134348c0faead061e9e343d/transformed/jetified-core-1.6.1/AndroidManifest.xml:32:27-74
+85            </intent-filter>
+86        </activity>
+87
+88        <receiver
+88-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:24:9-37:20
+89            android:name="androidx.tracing.perfetto.TracingReceiver"
+89-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:25:13-69
+90            android:directBootAware="false"
+90-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:26:13-44
+91            android:enabled="true"
+91-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:27:13-35
+92            android:exported="true"
+92-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:28:13-36
+93            android:permission="android.permission.DUMP" >
+93-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:29:13-57
+94
+95            <!-- Note: DUMP above highly limits who can call the receiver; Shell has DUMP perm. -->
+96            <intent-filter>
+96-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:32:13-36:29
+97                <action android:name="androidx.tracing.perfetto.action.ENABLE_TRACING" />
+97-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:33:17-90
+97-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:33:25-87
+98                <action android:name="androidx.tracing.perfetto.action.ENABLE_TRACING_COLD_START" />
+98-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:34:17-101
+98-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:34:25-98
+99                <action android:name="androidx.tracing.perfetto.action.DISABLE_TRACING_COLD_START" />
+99-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:35:17-102
+99-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:35:25-99
+100            </intent-filter>
+101        </receiver>
+102
+103        <provider
+103-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:39:9-47:20
+104            android:name="androidx.startup.InitializationProvider"
+104-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:40:13-67
+105            android:authorities="tech.mobiledeveloper.microbench.test.androidx-startup"
+105-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:41:13-68
+106            android:exported="false" >
+106-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:42:13-37
+107            <meta-data
+107-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:44:13-46:52
+108                android:name="androidx.tracing.perfetto.StartupTracingInitializer"
+108-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:45:17-83
+109                android:value="androidx.startup" />
+109-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:46:17-49
+110            <meta-data
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+111                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+112                android:value="androidx.startup" />
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+113        </provider>
+114
+115        <receiver
+115-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:49:9-55:20
+116            android:name="androidx.tracing.perfetto.StartupTracingConfigStoreIsEnabledGate"
+116-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:50:13-92
+117            android:directBootAware="false"
+117-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:51:13-44
+118            android:enabled="false"
+118-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:52:13-36
+119            android:exported="false" >
+119-->[androidx.tracing:tracing-perfetto:1.0.0] /Users/neuradev/.gradle/caches/8.10/transforms/95eda2aa71db0ad65a0eab479dc205aa/transformed/jetified-tracing-perfetto-1.0.0/AndroidManifest.xml:53:13-37
+120        </receiver>
+121        <receiver
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+122            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+123            android:directBootAware="false"
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+124            android:enabled="true"
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+125            android:exported="true"
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+126            android:permission="android.permission.DUMP" >
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+127            <intent-filter>
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+128                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+129            </intent-filter>
+130            <intent-filter>
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+131                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+132            </intent-filter>
+133            <intent-filter>
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+134                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+135            </intent-filter>
+136            <intent-filter>
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+137                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/neuradev/.gradle/caches/8.10/transforms/34b33e48c8574cd22606c57f7849f23c/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+138            </intent-filter>
+139        </receiver>
+140    </application>
+141
+142</manifest>

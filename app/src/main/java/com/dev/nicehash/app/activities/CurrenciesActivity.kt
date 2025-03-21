@@ -3,8 +3,6 @@ package com.dev.nicehash.app.activities
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import com.arellomobile.mvp.presenter.InjectPresenter
-import com.arellomobile.mvp.presenter.ProvidePresenter
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.adapters.CurrencyAdapter
@@ -16,6 +14,8 @@ import com.dev.nicehash.domain.models.Currency
 import com.dev.nicehash.domain.repositories.ConfigurationRepository
 import com.dev.nicehash.helpers.EnumCollections
 import com.dev.nicehash.helpers.ListConfig
+import moxy.presenter.InjectPresenter
+import moxy.presenter.ProvidePresenter
 import javax.inject.Inject
 
 /**
@@ -28,7 +28,8 @@ class CurrenciesActivity: BaseActivity(), CurrencyView {
 
     @Inject lateinit var configurationRepository: ConfigurationRepository
 
-    @InjectPresenter lateinit var currencyPresenter: CurrencyPresenter
+    @InjectPresenter
+    lateinit var currencyPresenter: CurrencyPresenter
     @ProvidePresenter
     fun providePresenter(): CurrencyPresenter {
         return CurrencyPresenter(configurationRepository = configurationRepository)

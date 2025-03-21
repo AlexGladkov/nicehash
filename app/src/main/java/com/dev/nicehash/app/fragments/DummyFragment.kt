@@ -1,6 +1,6 @@
 package com.dev.nicehash.app.fragments
 
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 
 /**
  * Created by Alex Gladkov on 15.07.18.

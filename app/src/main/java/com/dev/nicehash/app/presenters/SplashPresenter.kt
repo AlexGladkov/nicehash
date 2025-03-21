@@ -1,8 +1,5 @@
 package com.dev.nicehash.app.presenters
 
-import android.util.Log
-import com.arellomobile.mvp.InjectViewState
-import com.arellomobile.mvp.MvpPresenter
 import com.dev.nicehash.app.views.SplashView
 import com.dev.nicehash.domain.models.Configuration
 import com.dev.nicehash.domain.models.Miner
@@ -10,6 +7,8 @@ import com.dev.nicehash.domain.repositories.ConfigurationRepository
 import com.dev.nicehash.domain.repositories.MinerRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import moxy.InjectViewState
+import moxy.MvpPresenter
 
 /**
  * Created by Alex Gladkov on 16.07.18.

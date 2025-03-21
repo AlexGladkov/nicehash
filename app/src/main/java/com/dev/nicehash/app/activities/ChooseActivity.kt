@@ -3,14 +3,9 @@ package com.dev.nicehash.app.activities
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.util.Log
 import android.view.View
 import android.view.WindowManager
 import android.widget.Toast
-import com.arellomobile.mvp.MvpAppCompatActivity
-import com.arellomobile.mvp.presenter.InjectPresenter
-import com.arellomobile.mvp.presenter.ProvidePresenter
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.adapters.MinerAdapter
@@ -34,6 +29,9 @@ import com.github.terrakok.cicerone.Navigator
 import com.github.terrakok.cicerone.NavigatorHolder
 import com.github.terrakok.cicerone.Replace
 import com.github.terrakok.cicerone.Router
+import moxy.MvpAppCompatActivity
+import moxy.presenter.InjectPresenter
+import moxy.presenter.ProvidePresenter
 import javax.inject.Inject
 
 /**
@@ -49,7 +47,8 @@ class ChooseActivity: MvpAppCompatActivity(), RouterProvider, ChooseView {
     @Inject lateinit var minerRepository: MinerRepository
     @Inject lateinit var configurationRepository: ConfigurationRepository
 
-    @InjectPresenter lateinit var choosePresenter: ChoosePresenter
+    @InjectPresenter
+    lateinit var choosePresenter: ChoosePresenter
     @ProvidePresenter
     fun provideChoosePresenter(): ChoosePresenter {
         return ChoosePresenter(router = routerChoose, minerRepository = minerRepository,

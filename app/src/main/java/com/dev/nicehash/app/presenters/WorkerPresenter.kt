@@ -1,12 +1,13 @@
 package com.dev.nicehash.app.presenters
 
-import com.arellomobile.mvp.InjectViewState
-import com.arellomobile.mvp.MvpPresenter
+import android.annotation.SuppressLint
 import com.dev.nicehash.app.views.WorkerView
 import com.dev.nicehash.domain.models.WorkerHub
 import com.dev.nicehash.domain.repositories.MinerRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import moxy.InjectViewState
+import moxy.MvpPresenter
 
 /**
  * Created by Alex Gladkov on 15.07.18.
@@ -15,6 +16,7 @@ import io.reactivex.schedulers.Schedulers
 @InjectViewState
 class WorkerPresenter(val minerRepository: MinerRepository) : MvpPresenter<WorkerView>() {
 
+    @SuppressLint("CheckResult")
     fun fetchWorkers(miner: String, id: Int, isRefresh: Boolean) {
         if (id < 0) {
             val array = ArrayList<WorkerHub>()

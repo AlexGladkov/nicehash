@@ -1,9 +1,6 @@
 package com.dev.nicehash.app.presenters
 
 import android.os.Bundle
-import android.util.Log
-import com.arellomobile.mvp.InjectViewState
-import com.arellomobile.mvp.MvpPresenter
 import com.dev.nicehash.R
 import com.dev.nicehash.app.views.MainView
 import com.dev.nicehash.domain.models.Configuration
@@ -14,6 +11,8 @@ import com.github.mikephil.charting.data.Entry
 import com.github.terrakok.cicerone.Router
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import moxy.InjectViewState
+import moxy.MvpPresenter
 import org.joda.time.DateTime
 
 /**

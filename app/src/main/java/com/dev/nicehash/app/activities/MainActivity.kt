@@ -3,10 +3,6 @@ package com.dev.nicehash.app.activities
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
-import android.support.v4.view.PagerAdapter
-import android.support.v4.view.ViewPager
-import android.support.v4.widget.NestedScrollView
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -14,8 +10,10 @@ import android.view.ViewGroup
 import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
-import com.arellomobile.mvp.presenter.InjectPresenter
-import com.arellomobile.mvp.presenter.ProvidePresenter
+import androidx.core.content.ContextCompat
+import androidx.core.widget.NestedScrollView
+import androidx.viewpager.widget.PagerAdapter
+import androidx.viewpager.widget.ViewPager
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.fragments.*
@@ -51,6 +49,8 @@ import com.github.terrakok.cicerone.Router
 import com.ogaclejapan.smarttablayout.SmartTabLayout
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems
+import moxy.presenter.InjectPresenter
+import moxy.presenter.ProvidePresenter
 import java.text.DecimalFormat
 import javax.inject.Inject
 
@@ -64,7 +64,8 @@ class MainActivity : BaseActivity(), MainView, RouterProvider, SmartTabLayout.Ta
     @Inject lateinit var exchangeServer: ExchangeServer
 
     // MARK: - Presenter setup
-    @InjectPresenter lateinit var mainPresenter: MainPresenter
+    @InjectPresenter
+    lateinit var mainPresenter: MainPresenter
 
     private lateinit var binding: ActivityMainBinding
 

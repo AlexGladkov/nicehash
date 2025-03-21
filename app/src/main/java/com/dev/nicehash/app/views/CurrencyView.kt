@@ -1,9 +1,9 @@
 package com.dev.nicehash.app.views
 
-import com.arellomobile.mvp.MvpView
-import com.arellomobile.mvp.viewstate.strategy.OneExecutionStateStrategy
-import com.arellomobile.mvp.viewstate.strategy.StateStrategyType
 import com.dev.nicehash.domain.models.Currency
+import moxy.MvpView
+import moxy.viewstate.strategy.OneExecutionStateStrategy
+import moxy.viewstate.strategy.StateStrategyType
 
 /**
  * Created by Alex Gladkov on 25.07.18.

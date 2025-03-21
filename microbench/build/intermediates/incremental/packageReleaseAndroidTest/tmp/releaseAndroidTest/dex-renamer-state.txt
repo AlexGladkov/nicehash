@@ -1,0 +1,4 @@
+#Wed Mar 19 18:02:26 MSK 2025
+base.0=/Users/neuradev/Documents/Development/nicehash/microbench/build/intermediates/dex/releaseAndroidTest/mergeDexReleaseAndroidTest/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

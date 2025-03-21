@@ -1,7 +1,6 @@
 package com.dev.nicehash.app.activities
 
 import android.os.Bundle
-import com.arellomobile.mvp.presenter.InjectPresenter
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.adapters.StatusAdapter
@@ -10,6 +9,7 @@ import com.dev.nicehash.app.views.StatusView
 import com.dev.nicehash.base.BaseActivity
 import com.dev.nicehash.domain.models.Status
 import com.dev.nicehash.helpers.ListConfig
+import moxy.presenter.InjectPresenter
 
 /**
  * Created by Alex Gladkov on 24.06.18.

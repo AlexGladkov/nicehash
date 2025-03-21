@@ -1,10 +1,10 @@
 package com.dev.nicehash.app.presenters
 
-import com.arellomobile.mvp.InjectViewState
-import com.arellomobile.mvp.MvpPresenter
 import com.dev.nicehash.app.views.StatusView
 import com.dev.nicehash.domain.models.Status
 import com.dev.nicehash.helpers.EnumCollections
+import moxy.InjectViewState
+import moxy.MvpPresenter
 
 /**
  * Created by Alex Gladkov on 25.07.18.

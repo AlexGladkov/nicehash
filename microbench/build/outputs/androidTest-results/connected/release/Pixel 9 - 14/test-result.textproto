@@ -1,0 +1,2215 @@
+# 2025-03-19T15:13:10.939Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "ExampleMacroBenchmark"
+    test_package: "tech.mobiledeveloper.microbench"
+    test_method: "startup"
+    start_time {
+      seconds: 1742396741
+      nanos: 468000000
+    }
+    end_time {
+      seconds: 1742397127
+      nanos: 871000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.message"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/connected_android_test_additional_output/releaseAndroidTest/connected/Pixel 9 - 14/additionaltestoutput.benchmark.message.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/connected_android_test_additional_output/releaseAndroidTest/connected/Pixel 9 - 14/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/connected_android_test_additional_output/releaseAndroidTest/connected/Pixel 9 - 14/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/connected_android_test_additional_output/releaseAndroidTest/connected/Pixel 9 - 14/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/connected_android_test_additional_output/releaseAndroidTest/connected/Pixel 9 - 14/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/connected_android_test_additional_output/releaseAndroidTest/connected/Pixel 9 - 14/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/connected_android_test_additional_output/releaseAndroidTest/connected/Pixel 9 - 14/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/connected_android_test_additional_output/releaseAndroidTest/connected/Pixel 9 - 14/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/connected_android_test_additional_output/releaseAndroidTest/connected/Pixel 9 - 14/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/connected_android_test_additional_output/releaseAndroidTest/connected/Pixel 9 - 14/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/connected_android_test_additional_output/releaseAndroidTest/connected/Pixel 9 - 14/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/androidTest-results/connected/release/Pixel 9 - 14/logcat-tech.mobiledeveloper.microbench.ExampleMacroBenchmark-startup.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/androidTest-results/connected/release/Pixel 9 - 14/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/androidTest-results/connected/release/Pixel 9 - 14/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/androidTest-results/connected/release/Pixel 9 - 14/cpuinfo"
+    }
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output/ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_median"
+    value: "578.1656295"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_min"
+    value: "576.182414"
+  }
+  details {
+    key: "DEBUGGABLE_time_to_initial_display_millis_stddev"
+    value: "19.890014007549453"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   min 576.2,   median 578.2,   max 617.1"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "WARNING: Benchmark Target is Debuggable\nTarget package com.dev.nicehash is running with debuggable=true in its manifest,\nwhich drastically reduces runtime performance in order to support debugging\nfeatures. Run benchmarks with debuggable=false. Debuggable affects execution\nspeed in ways that mean benchmark improvements might not carry over to a\nreal user\'s experience (or even regress release performance).\n\nExampleMacroBenchmark_startup\ntimeToInitialDisplayMs   [min 576.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [median 578.2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace),   [max 617.1](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace)\nTraces: Iteration [0](file://ExampleMacroBenchmark_startup_iter000_2025-03-19-15-06-20.perfetto-trace) [1](file://ExampleMacroBenchmark_startup_iter001_2025-03-19-15-07-06.perfetto-trace) [2](file://ExampleMacroBenchmark_startup_iter002_2025-03-19-15-07-51.perfetto-trace) [3](file://ExampleMacroBenchmark_startup_iter003_2025-03-19-15-08-41.perfetto-trace) [4](file://ExampleMacroBenchmark_startup_iter004_2025-03-19-15-09-32.perfetto-trace) [5](file://ExampleMacroBenchmark_startup_iter005_2025-03-19-15-09-58.perfetto-trace) [6](file://ExampleMacroBenchmark_startup_iter006_2025-03-19-15-10-10.perfetto-trace) [7](file://ExampleMacroBenchmark_startup_iter007_2025-03-19-15-10-17.perfetto-trace) [8](file://ExampleMacroBenchmark_startup_iter008_2025-03-19-15-10-54.perfetto-trace) [9](file://ExampleMacroBenchmark_startup_iter009_2025-03-19-15-11-47.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/tech.mobiledeveloper.microbench.test/additional_test_output"
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/Users/neuradev/Documents/Development/nicehash/microbench/build/outputs/androidTest-results/connected/release/Pixel 9 - 14/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

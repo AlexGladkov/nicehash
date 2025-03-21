@@ -1,20 +1,10 @@
 package com.dev.nicehash.app.activities
 
 import android.app.Activity
-import android.content.Context
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.content.ContextCompat
-import android.util.Log
 import android.view.View
 import android.view.WindowManager
-import android.widget.FrameLayout
-import android.widget.Toast
-import com.arellomobile.mvp.MvpAppCompatActivity
-import com.arellomobile.mvp.presenter.InjectPresenter
-import com.arellomobile.mvp.presenter.ProvidePresenter
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.presenters.ThemesPresenter
@@ -23,19 +13,12 @@ import com.dev.nicehash.base.BaseActivity
 import com.dev.nicehash.domain.repositories.ConfigurationRepository
 import com.dev.nicehash.enums.Keys
 import com.dev.nicehash.enums.Theme
-import com.dev.nicehash.helpers.PaintUtils
-import com.dev.nicehash.helpers.WindowUtils
-import com.github.mikephil.charting.components.AxisBase
-import com.github.mikephil.charting.components.LimitLine
-import com.github.mikephil.charting.components.XAxis
-import com.github.mikephil.charting.components.YAxis
-import com.github.mikephil.charting.data.Entry
-import com.github.mikephil.charting.data.LineData
-import com.github.mikephil.charting.data.LineDataSet
-import com.github.mikephil.charting.formatter.IAxisValueFormatter
 import com.github.terrakok.cicerone.NavigatorHolder
 import com.github.terrakok.cicerone.Router
 import com.github.terrakok.cicerone.androidx.AppNavigator
+import moxy.MvpAppCompatActivity
+import moxy.presenter.InjectPresenter
+import moxy.presenter.ProvidePresenter
 import javax.inject.Inject
 
 /**
@@ -49,7 +32,8 @@ class ThemesActivity: MvpAppCompatActivity(), ThemesView {
     @Inject lateinit var routerTheme: Router
     @Inject lateinit var navigatorHolder: NavigatorHolder
 
-    @InjectPresenter lateinit var themesPresenter: ThemesPresenter
+    @InjectPresenter
+    lateinit var themesPresenter: ThemesPresenter
     @ProvidePresenter
     fun provideThemesPresenter(): ThemesPresenter {
         return ThemesPresenter(configurationRepository = configurationRepository)

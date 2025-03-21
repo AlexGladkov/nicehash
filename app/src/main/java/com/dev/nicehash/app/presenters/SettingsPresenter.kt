@@ -1,16 +1,14 @@
 package com.dev.nicehash.app.presenters
 
-import android.os.Bundle
-import com.arellomobile.mvp.InjectViewState
-import com.arellomobile.mvp.MvpPresenter
+import android.annotation.SuppressLint
 import com.dev.nicehash.app.views.SettingsView
 import com.dev.nicehash.domain.models.Configuration
 import com.dev.nicehash.domain.repositories.ConfigurationRepository
-import com.dev.nicehash.enums.Keys
-import com.dev.nicehash.enums.ScreenKeys
 import com.github.terrakok.cicerone.Router
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import moxy.InjectViewState
+import moxy.MvpPresenter
 
 /**
  * Created by Alex Gladkov on 24.06.18.
@@ -32,6 +30,7 @@ class SettingsPresenter(val router: Router, private val configurationRepository:
 //        }
     }
 
+    @SuppressLint("CheckResult")
     fun fetchConfiguration() {
         configurationRepository.fetchConfiguration()
                 .subscribeOn(Schedulers.newThread())
@@ -44,6 +43,7 @@ class SettingsPresenter(val router: Router, private val configurationRepository:
                 })
     }
 
+    @SuppressLint("CheckResult")
     fun updateConfiguration(configuration: Configuration) {
         configurationRepository.updateConfiguration(configuration = configuration)
                 .subscribeOn(Schedulers.newThread())

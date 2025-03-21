@@ -6,7 +6,6 @@ import com.dev.nicehash.R
 import com.dev.nicehash.base.BaseActivity
 import android.content.pm.PackageManager
 import android.R.attr.versionName
-//import com.google.android.gms.common.util.ClientLibraryUtils.getPackageInfo
 import android.content.pm.PackageInfo
 
 

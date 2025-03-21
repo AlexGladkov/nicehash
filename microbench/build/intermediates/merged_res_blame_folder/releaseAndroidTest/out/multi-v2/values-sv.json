@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "tech.mobiledeveloper.microbench.test.microbench-mergeReleaseAndroidTestResources-16:/values-sv/values-sv.xml",
+            "map": [
+                {
+                    "source": "/Users/neuradev/.gradle/caches/8.10/transforms/bf5d103a86767a8ae8a7f440a97c3cec/transformed/core-1.9.0/res/values-sv/values-sv.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}
