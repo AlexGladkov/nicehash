@@ -1,1 +1,3 @@
 include ':app'
+include ':macrobenchmark'
+include ':microbenchmark'

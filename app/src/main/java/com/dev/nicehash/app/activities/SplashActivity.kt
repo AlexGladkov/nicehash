@@ -3,6 +3,7 @@ package com.dev.nicehash.app.activities
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import com.dev.nicehash.R
 import com.dev.nicehash.app.App
 import com.dev.nicehash.app.presenters.SplashPresenter
@@ -24,10 +25,10 @@ import javax.inject.Inject
  * Created by Alex Gladkov on 16.07.18.
  * Start activity (all logic threads starts from here)
  */
-class SplashActivity: BaseActivity(), SplashView {
+class SplashActivity : BaseActivity(), SplashView {
     private val TAG = SplashActivity::class.java.simpleName
 
-    // MARK: - Presenter setup
+//    // MARK: - Presenter setup
     @Inject lateinit var configurationRepository: ConfigurationRepository
     @Inject lateinit var minerRepository: MinerRepository
     @Inject lateinit var generalRepository: GeneralRepository

@@ -8,7 +8,9 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:8.2.1' // Обновляем Gradle Plugin
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath 'com.google.gms:google-services:4.4.0' // Обновляем Google Services Plugin
+        classpath 'com.google.gms:google-services:4.4.0'
+        classpath 'androidx.benchmark:benchmark-gradle-plugin:1.3.3'
+// Обновляем Google Services Plugin
     }
 }
 

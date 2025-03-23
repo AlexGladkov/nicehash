@@ -1,6 +1,7 @@
 package com.dev.nicehash.app
 
 import android.app.Application
+import android.os.Trace
 import com.dev.nicehash.app.di.*
 import com.dev.nicehash.enums.Theme
 //import com.google.firebase.FirebaseApp
@@ -25,7 +26,9 @@ class App: Application() {
     override fun onCreate() {
         super.onCreate()
 //        FirebaseApp.initializeApp(this@App)
+        Trace.beginSection("Dagger2")
         initializeDagger()
+        Trace.endSection()
     }
 
     private fun initializeDagger() {

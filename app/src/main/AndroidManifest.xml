@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.android.vending.BILLING" />
@@ -12,6 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/LightBlueTheme">
+        <profileable
+            android:shell="true"
+            tools:targetApi="29" />
+
         <activity
             android:name=".app.activities.SplashActivity"
             android:exported="true">
@@ -21,15 +26,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".app.activities.ChooseActivity"
             android:theme="@style/TransparentTheme" />
-
         <activity
             android:name=".app.activities.SettingsActivity"
             android:theme="@style/LightBlueTheme" />
-
         <activity android:name=".app.activities.MainActivity" />
         <activity android:name=".app.activities.AddActivity" />
         <activity android:name=".app.activities.NotificationsActivity" />
